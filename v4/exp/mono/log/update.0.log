@@ -1,0 +1,14 @@
+gmm-est --min-gaussian-occupancy=3 --mix-up=113 --power=0.25 exp/mono/0.mdl 'gmm-sum-accs - exp/mono/0.*.acc|' exp/mono/1.mdl 
+gmm-sum-accs - exp/mono/0.1.acc 
+LOG (gmm-sum-accs[5.5.0~1494-e5a5]:main():gmm-sum-accs.cc:63) Summed 1 stats, total count 3439, avg like/frame -90.3175
+LOG (gmm-sum-accs[5.5.0~1494-e5a5]:main():gmm-sum-accs.cc:66) Total count of stats is 3439
+LOG (gmm-sum-accs[5.5.0~1494-e5a5]:main():gmm-sum-accs.cc:67) Written stats to -
+LOG (gmm-est[5.5.0~1494-e5a5]:MleUpdate():transition-model.cc:528) TransitionModel::Update, objf change is 0.205096 per frame over 3439 frames. 
+LOG (gmm-est[5.5.0~1494-e5a5]:MleUpdate():transition-model.cc:531) 0 probabilities floored, 317 out of 457 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:102) Transition model update: Overall 0.205096 log-like improvement per frame over 3439 frames.
+LOG (gmm-est[5.5.0~1494-e5a5]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:225) 0 variance elements floored in 0 Gaussians, out of 113
+LOG (gmm-est[5.5.0~1494-e5a5]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:229) Removed 0 Gaussians due to counts < --min-gaussian-occupancy=3 and --remove-low-count-gaussians=true
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:113) GMM update: Overall 5.50318 objective function improvement per frame over 3439 frames
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:116) GMM update: Overall avg like per frame = -90.3175 over 3439 frames.
+LOG (gmm-est[5.5.0~1494-e5a5]:SplitByCount():am-diag-gmm.cc:116) Split 113 states with target = 113, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 113 to 113
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:146) Written model to exp/mono/1.mdl

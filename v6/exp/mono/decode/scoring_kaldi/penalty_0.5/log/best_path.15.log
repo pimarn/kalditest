@@ -1,0 +1,44 @@
+# lattice-scale --inv-acoustic-scale=15 "ark:gunzip -c exp/mono/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- | lattice-best-path --word-symbol-table=exp/mono/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/mono/graph/words.txt | cat > exp/mono/decode/scoring_kaldi/penalty_0.5/15.txt 
+# Started at Thu Oct 29 18:11:09 UTC 2020
+#
+lattice-best-path --word-symbol-table=exp/mono/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=15 'ark:gunzip -c exp/mono/decode/lat.*.gz|' ark:- 
+lattice-add-penalty --word-ins-penalty=0.5 ark:- ark:- 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid41, best cost 69.759 + 5816.65 = 5886.41 over 1262 frames.
+uid41 กบ ไก่ กา ไก่ กา กา ไก่ กระต่าย กา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid42, best cost 64.4354 + 5991.71 = 6056.15 over 1268 frames.
+uid42 กบ กา กบ ไก่ กา ไก่ กระต่าย กา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid43, best cost 68.5119 + 6049.25 = 6117.76 over 1312 frames.
+uid43 กบ กา กบ ไก่ กา ไก่ กระต่าย กา กา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid44, best cost 78.2446 + 5983.1 = 6061.35 over 1256 frames.
+uid44 กบ กบ กา กบ กบ กา กบ กระต่าย ไก่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid45, best cost 85.2111 + 6583.32 = 6668.53 over 1308 frames.
+uid45 กา กระต่าย กา กา กบ กา กา กา ไก่ กระต่าย กา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid46, best cost 89.0878 + 5755.77 = 5844.86 over 1165 frames.
+uid46 กบ กา กา ไก่ กา กา กา ไก่ ไก่ กา กระต่าย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid47, best cost 81.2673 + 6386.7 = 6467.97 over 1310 frames.
+uid47 ไก่ กา กา กบ ไก่ ไก่ กา ไก่ กา ไก่ กระต่าย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid48, best cost 78.2515 + 5996.94 = 6075.19 over 1253 frames.
+uid48 กบ กา กา ไก่ กา กา กา กบ กา กระต่าย 
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 16 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid49, best cost 80.9787 + 6171.75 = 6252.72 over 1303 frames.
+uid49 ไก่ กา ไก่ ไก่ ไก่ ไก่ ไก่ ไก่ กา กา กระต่าย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid50, best cost 88.6789 + 5773.12 = 5861.8 over 1214 frames.
+uid50 ไก่ กา กา กา กบ ไก่ กบ ไก่ กา ไก่ ไก่ กา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid51, best cost 8.0106 + 2069.18 = 2077.19 over 316 frames.
+uid51 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid52, best cost 14.9064 + 1681 = 1695.91 over 269 frames.
+uid52 กบ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid53, best cost 17.1855 + 1140.6 = 1157.78 over 201 frames.
+uid53 กบ 
+LOG (lattice-add-penalty[5.5.0~1494-e5a5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 16 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid54, best cost 13.877 + 1237.34 = 1251.22 over 237 frames.
+uid54 กา กา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid55, best cost 16.8868 + 1607.22 = 1624.1 over 313 frames.
+uid55 กา กา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid56, best cost 14.4989 + 1589.7 = 1604.2 over 297 frames.
+uid56 กา กระต่าย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:124) Overall cost per frame is 4.94981 = 0.0608927 [graph] + 4.88892 [acoustic] over 14284 frames.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:128) Done 16 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Oct 29 18:11:09 UTC 2020, elapsed time 0 seconds

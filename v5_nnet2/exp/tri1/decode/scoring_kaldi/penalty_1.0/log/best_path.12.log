@@ -1,0 +1,18 @@
+# lattice-scale --inv-acoustic-scale=12 "ark:gunzip -c exp/tri1/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri1/graph/words.txt | cat > exp/tri1/decode/scoring_kaldi/penalty_1.0/12.txt 
+# Started at Fri Oct 16 17:41:02 UTC 2020
+#
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=12 'ark:gunzip -c exp/tri1/decode/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid18, best cost 37.0715 + 2945.13 = 2982.2 over 455 frames.
+uid18 กลางคืน กลาย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid19, best cost 25.0058 + 2800.75 = 2825.76 over 458 frames.
+uid19 กลัว กลั้น 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid20, best cost 27.7033 + 2738.24 = 2765.94 over 432 frames.
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 3 lattices.
+LOG (lattice-add-penalty[5.5.0~1494-e5a5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 3 lattices.
+uid20 กลัว กลัว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:124) Overall cost per frame is 6.37464 = 0.0667514 [graph] + 6.30789 [acoustic] over 1345 frames.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:128) Done 3 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Oct 16 17:41:02 UTC 2020, elapsed time 0 seconds

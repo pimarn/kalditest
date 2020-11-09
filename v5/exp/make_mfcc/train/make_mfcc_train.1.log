@@ -1,0 +1,23 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.1 --compress=true ark:- ark,scp:/kaldi/egs/king3/v5/mfcc/raw_mfcc_train.1.ark,/kaldi/egs/king3/v5/mfcc/raw_mfcc_train.1.scp 
+# Started at Sun Oct 18 14:34:13 UTC 2020
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/train/utt2num_frames.1 --compress=true ark:- ark,scp:/kaldi/egs/king3/v5/mfcc/raw_mfcc_train.1.ark,/kaldi/egs/king3/v5/mfcc/raw_mfcc_train.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/train/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/train/wav_train.1.scp ark:- 
+WARNING (compute-mfcc-feats[5.5.0~1494-e5a5]:Read():wave-reader.cc:260) Expected 147630 bytes in RIFF chunk, but after first data block there will be 36 + 147520 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid11
+WARNING (compute-mfcc-feats[5.5.0~1494-e5a5]:Read():wave-reader.cc:260) Expected 105870 bytes in RIFF chunk, but after first data block there will be 36 + 105760 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid12
+WARNING (compute-mfcc-feats[5.5.0~1494-e5a5]:Read():wave-reader.cc:260) Expected 137550 bytes in RIFF chunk, but after first data block there will be 36 + 137440 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid13
+WARNING (compute-mfcc-feats[5.5.0~1494-e5a5]:Read():wave-reader.cc:260) Expected 135150 bytes in RIFF chunk, but after first data block there will be 36 + 135040 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid14
+WARNING (compute-mfcc-feats[5.5.0~1494-e5a5]:Read():wave-reader.cc:260) Expected 126990 bytes in RIFF chunk, but after first data block there will be 36 + 126880 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid15
+WARNING (compute-mfcc-feats[5.5.0~1494-e5a5]:Read():wave-reader.cc:260) Expected 139950 bytes in RIFF chunk, but after first data block there will be 36 + 139840 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid16
+WARNING (compute-mfcc-feats[5.5.0~1494-e5a5]:Read():wave-reader.cc:260) Expected 112590 bytes in RIFF chunk, but after first data block there will be 36 + 112480 bytes (we do not support reading multiple data chunks).
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid17
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:185)  Done 7 out of 7 utterances.
+LOG (copy-feats[5.5.0~1494-e5a5]:main():copy-feats.cc:143) Copied 7 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sun Oct 18 14:34:14 UTC 2020, elapsed time 1 seconds

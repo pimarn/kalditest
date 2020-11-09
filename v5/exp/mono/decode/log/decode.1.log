@@ -1,0 +1,18 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.1.gz" 
+# Started at Sun Oct 18 14:34:27 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.0~1494-e5a5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 3 utterances, errors on 0
+uid18 กลางคืน กลาง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid18 is -6.53864 over 455 frames.
+uid19 กลัว กลั้น 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid19 is -6.16799 over 458 frames.
+uid20 กลัว กลัว 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid20 is -6.36777 over 432 frames.
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:176) Time taken 0.14561s: real-time factor assuming 100 frames/sec is 0.010826
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:179) Done 3 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -6.35754 over 1345 frames.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sun Oct 18 14:34:27 UTC 2020, elapsed time 0 seconds

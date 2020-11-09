@@ -1,0 +1,443 @@
+
+===== PREPARING ACOUSTIC DATA =====
+
+
+===== FEATURES EXTRACTION =====
+
+steps/make_mfcc.sh --nj 1 --cmd run.pl data/train exp/make_mfcc/train mfcc
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train
+steps/make_mfcc.sh --nj 1 --cmd run.pl data/test exp/make_mfcc/test mfcc
+utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+   Search for the word 'bold' in http://kaldi-asr.org/doc/data_prep.html
+   for more information.
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+Succeeded creating CMVN stats for train
+steps/compute_cmvn_stats.sh data/test exp/make_mfcc/test mfcc
+Succeeded creating CMVN stats for test
+
+===== PREPARING LANGUAGE DATA =====
+
+utils/prepare_lang.sh data/local/dict <SIL> data/local/lang data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> reading data/local/dict/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+**Creating data/local/dict/lexiconp.txt from data/local/dict/lexicon.txt
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 144 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 37 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 37 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 11 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 149 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 98 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 19 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+
+===== LANGUAGE MODEL CREATION =====
+===== MAKING lm.arpa =====
+
+
+===== MAKING G.fst =====
+
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang/words.txt data/local/tmp/lm.arpa data/lang/G.fst 
+LOG (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 9 [-3.401056	กระเทียม	-0.299648] skipped: word 'กระเทียม' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 10 [-3.401056	กระแส	-0.3007712] skipped: word 'กระแส' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 11 [-3.401056	กรุงศรี	-0.2993883] skipped: word 'กรุงศรี' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 12 [-3.224965	กลับ	-0.3005122] skipped: word 'กลับ' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 13 [-3.401056	กลางวัน	-0.2986953] skipped: word 'กลางวัน' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 14 [-3.224965	กล้วย	-0.2999939] skipped: word 'กล้วย' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 15 [-2.798996	กว่า	-0.6512245] skipped: word 'กว่า' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 16 [-3.401056	กสิกร	-0.2993883] skipped: word 'กสิกร' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 17 [-3.003116	กะเพรา	-0.2991286] skipped: word 'กะเพรา' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 18 [-3.401056	กัญชา	-0.2448575] skipped: word 'กัญชา' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 19 [-2.497966	กัน	-0.5448066] skipped: word 'กัน' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 20 [-2.747843	กับ	-0.3549334] skipped: word 'กับ' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 21 [-3.401056	การ	-0.3005123] skipped: word 'การ' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 22 [-3.401056	กาแฟ	-0.2934617] skipped: word 'กาแฟ' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 23 [-3.401056	กำกับ	-0.2981748] skipped: word 'กำกับ' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 24 [-3.401056	กิจกรรม	-0.298088] skipped: word 'กิจกรรม' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 25 [-2.340358	กิน	-0.3451442] skipped: word 'กิน' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 26 [-3.401056	กินข้าว	-0.294776] skipped: word 'กินข้าว' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 27 [-3.401056	กีฬา	-0.2982616] skipped: word 'กีฬา' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 29 [-3.003116	กี่โมง	-0.6427975] skipped: word 'กี่โมง' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 30 [-3.401056	กุมภา	-0.2878977] skipped: word 'กุมภา' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 31 [-3.401056	กู๊ด	-0.3008575] skipped: word 'กู๊ด' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 32 [-3.100026	ก็	-0.5992916] skipped: word 'ก็' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 33 [-3.224965	ก็ได้	-0.2415077] skipped: word 'ก็ได้' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 34 [-2.923934	ก่อน	-0.2919673] skipped: word 'ก่อน' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 35 [-3.401056	ก่อนหน้า	-0.2448575] skipped: word 'ก่อนหน้า' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 36 [-2.923934	ก๋วยเตี๋ยว	-0.2910859] skipped: word 'ก๋วยเตี๋ยว' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 37 [-3.401056	ขนม	-0.3007712] skipped: word 'ขนม' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 38 [-3.401056	ขนาด	-0.3008575] skipped: word 'ขนาด' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 39 [-3.401056	ขวด	-0.3006849] skipped: word 'ขวด' not in symbol table
+LOG (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:259) Of 2652 parse warnings, 30 were reported. Run program with --max_warnings=-1 to see all warnings
+LOG (arpa2fst[5.5.0~1494-e5a5]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 33 to 25
+
+===== MONO TRAINING =====
+
+steps/train_mono.sh --nj 1 --cmd run.pl data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 60.0% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+2063 warnings in exp/mono/log/update.*.log
+1 warnings in exp/mono/log/analyze_alignments.log
+21 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=1 align prob=-76.56 over 0.01h [retry=0.0%, fail=0.0%] states=113 gauss=196
+steps/train_mono.sh: Done training monophone system in exp/mono
+
+===== MONO DECODING =====
+
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree 
+tree-info exp/mono/tree 
+fstdeterminizestar --use-log=true 
+fsttablecompose data/lang/L_disambig.fst data/lang/G.fst 
+fstminimizeencoded 
+fstpushspecial 
+fstisstochastic data/lang/tmp/LG.fst 
+0.258599 0.258038
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_1_0.int data/lang/tmp/ilabels_1_0.16715 data/lang/tmp/LG.fst 
+fstisstochastic data/lang/tmp/CLG_1_0.fst 
+0.258599 0.258038
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst 
+fstrmsymbols exp/mono/graph/disambig_tid.int 
+fstminimizeencoded 
+fstrmepslocal 
+fstisstochastic exp/mono/graph/HCLGa.fst 
+0.455817 -0.000204914
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst 
+steps/decode.sh --config conf/decode.config --nj 1 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 50.0% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,5) and mean=2.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/mono/graph exp/mono/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+
+===== MONO ALIGNMENT =====
+
+steps/align_si.sh --nj 1 --cmd run.pl data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono_ali
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 60.0% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== TRI1 (first triphone pass) TRAINING =====
+
+steps/train_deltas.sh --cmd run.pl 2000 11000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 60.0% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+1 warnings in exp/tri1/log/analyze_alignments.log
+38 warnings in exp/tri1/log/init_model.log
+1 warnings in exp/tri1/log/mixup.log
+64 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/build_tree.log
+3 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/compile_questions.log
+exp/tri1: nj=1 align prob=-76.83 over 0.01h [retry=0.0%, fail=0.0%] states=48 gauss=158 tree-impr=3.49
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+
+===== TRI1 (first triphone pass) DECODING =====
+
+tree-info exp/tri1/tree 
+tree-info exp/tri1/tree 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_3_1.int data/lang/tmp/ilabels_3_1.19812 data/lang/tmp/LG.fst 
+fstisstochastic data/lang/tmp/CLG_3_1.fst 
+0.258599 0
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmepslocal 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+0.746108 0
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl exp/tri1/graph/HCLGa.fst 
+steps/decode.sh --config conf/decode.config --nj 1 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 50.0% of the time at utterance begin.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,1,14) and mean=3.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri1/graph exp/tri1/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+
+===== run.sh script is finished =====
+

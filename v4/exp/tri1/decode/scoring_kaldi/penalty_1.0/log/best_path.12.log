@@ -1,0 +1,32 @@
+# lattice-scale --inv-acoustic-scale=12 "ark:gunzip -c exp/tri1/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri1/graph/words.txt | cat > exp/tri1/decode/scoring_kaldi/penalty_1.0/12.txt 
+# Started at Mon Oct 12 02:53:30 UTC 2020
+#
+lattice-best-path --word-symbol-table=exp/tri1/graph/words.txt ark:- ark,t:- 
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=12 'ark:gunzip -c exp/tri1/decode/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid11, best cost 29.915 + 2186.06 = 2215.97 over 342 frames.
+uid11 มี ประชุม วันนี้ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid12, best cost 46.0791 + 2275.25 = 2321.33 over 357 frames.
+uid12 นั่ง ทำงาน มี นัด ดี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid13, best cost 34.7528 + 2493.57 = 2528.33 over 387 frames.
+uid13 ขั้น ตอน ถัด ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid14, best cost 36.01 + 2055.62 = 2091.63 over 316 frames.
+uid14 พรุ่งนี้ หยุด งาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid15, best cost 43.5489 + 2312.67 = 2356.21 over 372 frames.
+uid15 อาหาร ไทย ร้าน ดี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid16, best cost 48.1026 + 2169.82 = 2217.93 over 345 frames.
+uid16 เรา มี นัด กี่ โมง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid17, best cost 41.0134 + 2007.18 = 2048.19 over 320 frames.
+uid17 ถาม ตาราง นัด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid18, best cost 42.2934 + 2525.85 = 2568.14 over 380 frames.
+uid18 ร้าน อร่อย ใน จุฬา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid19, best cost 72.4693 + 2499.94 = 2572.41 over 335 frames.
+uid19 ร้าน ใน ตอน ถัด ร้าน ถอย หลัง ถอย 
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 10 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance uid20, best cost 15.6786 + 3739.23 = 3754.91 over 573 frames.
+uid20 นัด 
+LOG (lattice-add-penalty[5.5.0~1494-e5a5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 10 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:124) Overall cost per frame is 6.62062 = 0.109971 [graph] + 6.51065 [acoustic] over 3727 frames.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:128) Done 10 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Oct 12 02:53:30 UTC 2020, elapsed time 0 seconds

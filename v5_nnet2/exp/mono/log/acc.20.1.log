@@ -1,0 +1,12 @@
+# gmm-acc-stats-ali exp/mono/20.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/20.1.acc 
+# Started at Fri Oct 16 17:40:48 UTC 2020
+#
+gmm-acc-stats-ali exp/mono/20.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/20.1.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.0~1494-e5a5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 7 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:112) Done 7 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -69.6901 over 2816 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Oct 16 17:40:48 UTC 2020, elapsed time 0 seconds

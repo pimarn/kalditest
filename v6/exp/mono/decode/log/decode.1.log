@@ -1,0 +1,48 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode/lat.1.gz" 
+# Started at Thu Oct 29 18:10:47 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph/words.txt exp/mono/final.mdl exp/mono/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode/lat.1.gz' 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+uid41 กบ ไก่ กา ไก่ กา กา ไก่ กระต่าย กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid41 is -5.81304 over 1262 frames.
+uid42 กบ กา กา กบ ไก่ กา ไก่ กระต่าย กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid42 is -5.95307 over 1268 frames.
+uid43 กบ กา กา กบ ไก่ กา ไก่ กระต่าย กา กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid43 is -5.81109 over 1312 frames.
+uid44 กบ กบ กา กบ กบ กา ไก่ กบ กระต่าย ไก่ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid44 is -6.01308 over 1256 frames.
+uid45 กา กระต่าย กา กา กบ กา กา กา ไก่ กระต่าย กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid45 is -6.35232 over 1308 frames.
+uid46 กบ กา กา ไก่ กา ไก่ กา ไก่ ไก่ กา กระต่าย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid46 is -6.2474 over 1165 frames.
+uid47 ไก่ กบ กบ กา กา กา กบ ไก่ ไก่ กา ไก่ กา ไก่ กระต่าย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:RebuildRepository():determinize-lattice-pruned.cc:287) Rebuilding repository.
+WARNING (gmm-latgen-faster[5.5.0~1494-e5a5]:CheckMemoryUsage():determinize-lattice-pruned.cc:320) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (34943232,152192,15031416), after rebuilding, repo size was 28129696, effective beam was 4.20236 vs. requested beam 6
+WARNING (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:363) Determinization finished earlier than the beam for utterance uid47
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid47 is -6.15007 over 1310 frames.
+uid48 กบ กา กา ไก่ กา กา กา กา กบ กา กระต่าย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid48 is -6.03999 over 1253 frames.
+uid49 ไก่ กา กา ไก่ ไก่ ไก่ กา ไก่ ไก่ กา กา กระต่าย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid49 is -5.97804 over 1303 frames.
+LOG (apply-cmvn[5.5.0~1494-e5a5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 16 utterances, errors on 0
+uid50 ไก่ กา กา กา กบ ไก่ กบ ไก่ กา ไก่ ไก่ กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid50 is -6.0124 over 1214 frames.
+uid51 กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid51 is -8.20915 over 316 frames.
+uid52 กบ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid52 is -7.86486 over 269 frames.
+uid53 กบ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid53 is -7.17624 over 201 frames.
+uid54 กา กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid54 is -6.58036 over 237 frames.
+uid55 กา กา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid55 is -6.46932 over 313 frames.
+uid56 กา กระต่าย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid56 is -6.73608 over 297 frames.
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:176) Time taken 16.2428s: real-time factor assuming 100 frames/sec is 0.113713
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:179) Done 16 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -6.16764 over 14284 frames.
+# Accounting: time=17 threads=1
+# Ended (code 0) at Thu Oct 29 18:11:04 UTC 2020, elapsed time 17 seconds

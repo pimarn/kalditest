@@ -1,0 +1,32 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph//words.txt exp/mono/final.mdl exp/mono/graph//HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/mono/decode_test/lat.1.gz" 
+# Started at Wed Oct  7 10:31:16 UTC 2020
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/mono/graph//words.txt exp/mono/final.mdl exp/mono/graph//HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/mono/decode_test/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+uid11 มี ประชุม วันนี้ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid11 is -6.67586 over 408 frames.
+uid12 นั่ง ทำงาน ไทย ดี 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid12 is -6.01541 over 478 frames.
+uid13 ขั้น ตอน ไทย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid13 is -6.08979 over 434 frames.
+uid14 หลัง ดี หยุด งาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid14 is -5.86764 over 430 frames.
+LOG (apply-cmvn[5.5.0~1494-e5a5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 10 utterances, errors on 0
+uid15 อาหาร ทำงาน นั่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid15 is -6.26254 over 452 frames.
+uid16 เรา มี ใน กี่ นั่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid16 is -6.09567 over 343 frames.
+uid17 ถาม ตาราง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid17 is -5.92645 over 401 frames.
+uid18 ใน ถอย ใน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid18 is -6.94066 over 361 frames.
+uid19 วันนี้ ออก สาย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid19 is -5.99781 over 401 frames.
+uid20 พูด ถอย หลัง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance uid20 is -5.92667 over 361 frames.
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:176) Time taken 0.291772s: real-time factor assuming 100 frames/sec is 0.0071706
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:179) Done 10 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -6.17188 over 4069 frames.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Wed Oct  7 10:31:16 UTC 2020, elapsed time 0 seconds

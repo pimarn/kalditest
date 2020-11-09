@@ -1,0 +1,251 @@
+=== Create LM ===
+
+conflicting default discounting options
+=== Create Lexicon ===
+
+stack usage:  205
+=== Prepare LG ===
+
+Preparing phone lists and clustering questions
+1 silence phones saved to: data/local/dict/silence_phones.txt
+1 optional silence saved to: data/local/dict/optional_silence.txt
+37 non-silence phones saved to: data/local/dict/nonsilence_phones.txt
+2 extra triphone clustering-related questions saved to: data/local/dict/extra_questions.txt
+Lexicon text file saved as: data/local/dict/lexicon.txt
+utils/prepare_lang.sh --phone-symbol-table exp/chain/tree_a_sp/phones.txt data/local/dict !SIL data/local/dict/lang_tmp data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> reading data/local/dict/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+**Creating data/local/dict/lexiconp.txt from data/local/dict/lexicon.txt
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 148 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 38 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 38 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 11 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 153 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 21 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 66 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+../../babel/s5/local/arpa2G.sh data/local/tmp/lm.arpa.gz data/lang data/lang
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang/words.txt - data/lang/G.fst 
+LOG (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 10 [-2.514784	@	-0.6381695] skipped: word '@' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 11 [-1.838478	@@	-1.006728] skipped: word '@@' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 12 [-4.285636	@@0	-0.2974833] skipped: word '@@0' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 13 [-1.11965	a	-1.627937] skipped: word 'a' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 14 [-1.342142	aa	-1.39982] skipped: word 'aa' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 15 [-2.116844	b	-1.054272] skipped: word 'b' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 16 [-4.109545	bl	-0.2957446] skipped: word 'bl' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 17 [-4.285636	br	-0.2985255] skipped: word 'br' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 18 [-2.024373	c	-1.207851] skipped: word 'c' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 19 [-1.995602	ch	-1.261159] skipped: word 'ch' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 20 [-4.109545	ch^	-0.4231459] skipped: word 'ch^' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 21 [-2.089736	d	-1.12306] skipped: word 'd' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 22 [-4.285636	dr	-0.2984576] skipped: word 'dr' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 23 [-2.356217	e	-1.11848] skipped: word 'e' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 24 [-2.240313	ee	-0.8293841] skipped: word 'ee' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 25 [-2.700175	f	-0.6463428] skipped: word 'f' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 26 [-3.808515	f^	-0.4891108] skipped: word 'f^' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 27 [-3.984606	fr	-0.2827299] skipped: word 'fr' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 28 [-2.268603	h	-0.9814622] skipped: word 'h' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 29 [-1.75161	i	-1.040035] skipped: word 'i' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 30 [-2.043841	ii	-0.8707413] skipped: word 'ii' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 31 [-2.228731	iia	-0.9220858] skipped: word 'iia' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 32 [-1.960326	j	-1.200724] skipped: word 'j' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 33 [-1.807792	j^	-1.113589] skipped: word 'j^' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 34 [-1.879096	k	-1.322285] skipped: word 'k' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 35 [-1.824738	k^	-1.111148] skipped: word 'k^' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 36 [-1.883375	kh	-1.295035] skipped: word 'kh' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 37 [-3.030364	khl	-0.505071] skipped: word 'khl' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 38 [-2.667588	khr	-0.7008316] skipped: word 'khr' not in symbol table
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:219) line 39 [-3.109545	khw	-0.7674124] skipped: word 'khw' not in symbol table
+LOG (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+LOG (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+WARNING (arpa2fst[5.5.0~1494-e5a5]:Read():arpa-file-parser.cc:259) Of 17460 parse warnings, 30 were reported. Run program with --max_warnings=-1 to see all warnings
+LOG (arpa2fst[5.5.0~1494-e5a5]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 46 to 2
+fstisstochastic data/lang/G.fst 
+2.14178 0.436742
+=== Make Graph ===
+
+tree-info exp/chain/tree_a_sp/tree 
+tree-info exp/chain/tree_a_sp/tree 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstpushspecial 
+fsttablecompose data/lang/L_disambig.fst data/lang/G.fst 
+fstisstochastic data/lang/tmp/LG.fst 
+0.754057 0.753715
+[info]: LG not stochastic.
+fstcomposecontext --context-size=2 --central-position=1 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_2_1.int data/lang/tmp/ilabels_2_1.21874 data/lang/tmp/LG.fst 
+fstisstochastic data/lang/tmp/CLG_2_1.fst 
+0.754057 0.753715
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/chain/tree_a_sp/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_2_1 exp/chain/tree_a_sp/tree exp/chain/tree_a_sp/final.mdl 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fsttablecompose exp/chain/tree_a_sp/graph/Ha.fst data/lang/tmp/CLG_2_1.fst 
+fstrmsymbols exp/chain/tree_a_sp/graph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic exp/chain/tree_a_sp/graph/HCLGa.fst 
+2.03519 0.753444
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=1.0 --reorder=true exp/chain/tree_a_sp/final.mdl exp/chain/tree_a_sp/graph/HCLGa.fst 
+fstisstochastic exp/chain/tree_a_sp/graph/HCLG.fst 
+2.03519 1.90465e-09
+[info]: final HCLG is not stochastic.
+=== Decode ===
+
+steps/online/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --nj 1 exp/chain/tree_a_sp/graph data/test exp/chain/tdnn1r_sp_online/decode_test
+local/score.sh --cmd run.pl data/test exp/chain/tree_a_sp/graph exp/chain/tdnn1r_sp_online/decode_test
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+=== Done ===
