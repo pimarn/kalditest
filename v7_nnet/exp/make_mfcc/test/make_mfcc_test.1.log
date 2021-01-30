@@ -1,0 +1,26 @@
+# compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/kaldi/egs/king3/v7_nnet/mfcc/raw_mfcc_test.1.ark,/kaldi/egs/king3/v7_nnet/mfcc/raw_mfcc_test.1.scp 
+# Started at Mon Nov 23 13:19:42 UTC 2020
+#
+copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/kaldi/egs/king3/v7_nnet/mfcc/raw_mfcc_test.1.ark,/kaldi/egs/king3/v7_nnet/mfcc/raw_mfcc_test.1.scp 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid41
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid42
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid43
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid44
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid45
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid46
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid47
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid48
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid49
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid50
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid51
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid52
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid53
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid54
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid55
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key uid56
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:185)  Done 16 out of 16 utterances.
+LOG (copy-feats[5.5.0~1494-e5a5]:main():copy-feats.cc:143) Copied 16 feature matrices.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Nov 23 13:19:42 UTC 2020, elapsed time 0 seconds

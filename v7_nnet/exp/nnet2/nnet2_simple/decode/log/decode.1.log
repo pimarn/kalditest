@@ -1,0 +1,43 @@
+# nnet-latgen-faster-parallel --max-active=500 --min-active=200 --beam=8 --lattice-beam=3 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/nnet2/nnet2_simple/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:copy-feats scp:data/test/split1/1/feats.scp ark:- |" "ark:|gzip -c > exp/nnet2/nnet2_simple/decode/lat.1.gz" 
+# Started at Mon Nov 23 14:28:54 UTC 2020
+#
+nnet-latgen-faster-parallel --max-active=500 --min-active=200 --beam=8 --lattice-beam=3 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/nnet2/nnet2_simple/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:copy-feats scp:data/test/split1/1/feats.scp ark:- |' 'ark:|gzip -c > exp/nnet2/nnet2_simple/decode/lat.1.gz' 
+copy-feats scp:data/test/split1/1/feats.scp ark:- 
+uid41 ไก่ กบ ไก่ กา กบ กบ ไก่ กา กบ ไก่ กระต่าย กบ ไก่ 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid41 is 0.134858 over 1262 frames.
+uid42 ไก่ กบ ไก่ กา กบ กบ ไก่ กา กบ ไก่ กระต่าย กบ กา กบ 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid42 is 0.131563 over 1268 frames.
+uid43 กบ กบ ไก่ กา ไก่ กบ ไก่ กา กบ ไก่ กระต่าย กา ไก่ 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid43 is 0.134647 over 1312 frames.
+uid44 กบ กบ กา กา กบ กา กบ ไก่ กบ กระต่าย ไก่ 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid44 is 0.150366 over 1256 frames.
+uid45 กบ กบ ไก่ กา กบ กบ กบ กา ไก่ กบ กระต่าย กา 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid45 is 0.138737 over 1308 frames.
+uid46 กบ กบ ไก่ กา กบ ไก่ กา ไก่ กบ กา กระต่าย 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid46 is 0.135467 over 1165 frames.
+uid47 กบ กบ ไก่ กบ กบ ไก่ กบ กา ไก่ กบ ไก่ กระต่าย 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid47 is 0.141706 over 1310 frames.
+uid48 กบ ไก่ กา กบ ไก่ กา ไก่ กบ ไก่ กา กระต่าย 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid48 is 0.129329 over 1253 frames.
+uid49 กบ ไก่ กา กบ ไก่ กา กระต่าย กบ กา กระต่าย 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid49 is 0.125267 over 1303 frames.
+LOG (copy-feats[5.5.0~1494-e5a5]:main():copy-feats.cc:143) Copied 16 feature matrices.
+uid50 กบ ไก่ กา กบ กระต่าย กบ กา ไก่ กบ กา 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid50 is 0.116116 over 1214 frames.
+uid51 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid51 is 0.293964 over 316 frames.
+uid52 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid52 is 0.282121 over 269 frames.
+uid53 ไก่ กบ 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid53 is 0.170762 over 201 frames.
+uid54 ไก่ ไก่ 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid54 is 0.0985642 over 237 frames.
+uid55 กา 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid55 is 0.117691 over 313 frames.
+uid56 ไก่ กระต่าย 
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:~DecodeUtteranceLatticeFasterClass():decoder-wrappers.cc:180) Log-like per frame for utterance uid56 is 0.106639 over 297 frames.
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:main():nnet-latgen-faster-parallel.cc:191) Time taken 0.94279s: real-time factor per thread assuming 100 frames/sec is 0.00660032
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:main():nnet-latgen-faster-parallel.cc:194) Done 16 utterances, failed for 0
+LOG (nnet-latgen-faster-parallel[5.5.0~1494-e5a5]:main():nnet-latgen-faster-parallel.cc:196) Overall log-likelihood per frame is 0.139223 over 14284 frames.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Nov 23 14:28:55 UTC 2020, elapsed time 1 seconds
