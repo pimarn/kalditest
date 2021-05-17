@@ -1,0 +1,177 @@
+WARNING: data_ky already exists... should I delete it?
+enter: y/n
+WARNING: plp_ky already exists... should I delete it?
+enter: y/n
+
+####==========================####
+#### TRAINING AUDIO DATA PREP ####
+####==========================####
+
+You have an audio dir in input_ky...
+Should I delete it (assuming softlinks)?
+Enter: y / n
+./run_gmm.sh: Assuming your train audio data is in /kaldi/egs/king3/easy-kaldi/input_ky/wav_dir/train
+./run_gmm.sh: Making soflinks to original audio data with ky_ as prefix
+local/prepare_audio_data.sh: looking for audio data in input_ky/audio
+
+ .67 hours of audio for training 
+ in data_ky/train/wav.scp
+
+
+####==========================####
+#### TRAIN FEATURE EXTRACTION ####
+####==========================####
+
+MAKE PLPs:
+nj=2
+Source data dir: data_ky/train
+Destination feats dir: plp_ky
+Log dir: data_ky/train/make_plp_log
+steps/make_plp.sh --cmd utils/run.pl --nj 2 data_ky/train plp_ky/make_plp_log plp_ky
+utils/validate_data_dir.sh: Successfully validated data-directory data_ky/train
+steps/make_plp.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating PLP features for train
+fix_data_dir.sh: kept all 1134 utterances.
+fix_data_dir.sh: old files are kept in data_ky/train/.backup
+
+Succeeded creating CMVN stats for train
+
+fix_data_dir.sh: kept all 1134 utterances.
+fix_data_dir.sh: old files are kept in data_ky/train/.backup
+./extract_feats.sh: splitting feats into 2 subdirs
+utils/validate_data_dir.sh: Successfully validated data-directory data_ky/train/split2/1
+utils/validate_data_dir.sh: Successfully validated data-directory data_ky/train/split2/2
+Preparing phone lists and clustering questions
+1 silence phones saved to: data_ky/local/dict/silence_phones.txt
+1 optional silence saved to: data_ky/local/dict/optional_silence.txt
+56 non-silence phones saved to: data_ky/local/dict/nonsilence_phones.txt
+2 extra triphone clustering-related questions saved to: data_ky/local/dict/extra_questions.txt
+Lexicon text file saved as: data_ky/local/dict/lexicon.txt
+/kaldi/egs/babel/s5/local/arpa2G.sh data_ky/local/tmp/lm.arpa.gz data_ky/lang data_ky/lang
+
+####===============####
+#### TRAINING GMMs ####
+####===============####
+
+
+####===========================####
+#### BEGIN TRAINING MONOPHONES ####
+####===========================####
+
+#### Train Monophones ####
+steps/train_mono.sh: no such file data_ky/lang/phones/sets.int
+
+####
+#### ERROR: train_mono.sh 
+####
+
+#### Align Monophones ####
+steps/align_si.sh: expected file data_ky/lang/oov.int to exist
+
+####
+#### ERROR: align_si.sh 
+####
+
+
+####===========================####
+#### END TRAINING MONOPHONES ####
+####===========================####
+
+
+####==========================####
+#### BEGIN TRAINING TRIPHONES ####
+####==========================####
+
+### Train Triphones ###
+steps/train_deltas.sh --cmd utils/run.pl --num-iters 25 --beam 10 1000 2000 data_ky/train data_ky/lang exp_ky/monophones_aligned exp_ky/triphones
+train_deltas.sh: no such file exp_ky/monophones_aligned/final.mdl
+
+####
+#### ERROR: train_deltas.sh 
+####
+
+### Align Triphones ###
+steps/align_si.sh: expected file data_ky/lang/oov.int to exist
+
+####
+#### ERROR: align_si.sh 
+####
+
+
+####========================####
+#### END TRAINING TRIPHONES ####
+####========================####
+
+
+####===================####
+#### GRAPH COMPILATION ####
+####===================####
+
+mkgraph.sh: expected data_ky/lang_decode/L.fst to exist
+
+####
+#### ERROR: mkgraph.sh 
+####
+
+
+####==========================####
+#### TESTING AUDIO DATA PREP ####
+####==========================####
+
+local/prepare_audio_data.sh: looking for audio data in /kaldi/egs/king3/easy-kaldi/input_ky/wav_dir/test
+
+ .33 hours of audio for training 
+ in data_ky/test/wav.scp
+
+
+####=========================####
+#### TEST FEATURE EXTRACTION ####
+####=========================####
+
+MAKE PLPs:
+nj=2
+Source data dir: data_ky/test
+Destination feats dir: plp_ky
+Log dir: data_ky/test/make_plp_log
+steps/make_plp.sh --cmd utils/run.pl --nj 2 data_ky/test plp_ky/make_plp_log plp_ky
+utils/validate_data_dir.sh: Successfully validated data-directory data_ky/test
+steps/make_plp.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating PLP features for test
+fix_data_dir.sh: kept all 510 utterances.
+fix_data_dir.sh: old files are kept in data_ky/test/.backup
+
+Succeeded creating CMVN stats for test
+
+fix_data_dir.sh: kept all 510 utterances.
+fix_data_dir.sh: old files are kept in data_ky/test/.backup
+./extract_feats.sh: splitting feats into 2 subdirs
+utils/validate_data_dir.sh: Successfully validated data-directory data_ky/test/split2/1
+utils/validate_data_dir.sh: Successfully validated data-directory data_ky/test/split2/2
+
+####================####
+#### BEGIN DECODING ####
+####================####
+
+
+####================####
+#### BEGIN DECODING ####
+####================####
+
+
+ ### Decoding with 2 jobs  ### steps/decode.sh 6
+decode.sh: no such file exp_ky/triphones/final.mdl
+
+####
+#### ERROR: decode.sh 
+####
+
+#### BEGIN CALCULATE WER ####
+
+####==============####
+#### END DECODING ####
+####==============####
+
+###
+###
+###
+./run_nnet3.sh: no such file exp_ky/triphones_aligned/ali.1.gz

@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+
+opendir my $dh, "/tmp" or die "Cannot open directory: $!";
+#my @spkr_dirs = grep {-d "/tmp/$_" && ! /^\.{1,2}$/} readdir($dh);
+my @spkr_dirs = grep {-d "/tmp/$_" } readdir($dh);
+foreach (@spkr_dirs) {
+   print $_ , "\n";
+}
+closedir $dh;

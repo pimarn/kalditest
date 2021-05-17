@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst "ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split1/1/text|" "ark:|gzip -c >exp/mono/fsts.1.gz" 
+# Started at Sun May  2 16:11:51 UTC 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono/tree exp/mono/0.mdl data/lang/L.fst 'ark:sym2int.pl --map-oov 1 -f 2- data/lang/words.txt < data/train/split1/1/text|' 'ark:|gzip -c >exp/mono/fsts.1.gz' 
+sym2int.pl: replacing 3 with 1
+sym2int.pl: replacing 2.2 with 1
+sym2int.pl: replacing 2 with 1
+sym2int.pl: replacing ที่1 with 1
+sym2int.pl: replacing 1 with 1
+sym2int.pl: replacing 2 with 1
+sym2int.pl: replacing 20 with 1
+sym2int.pl: replacing 3 with 1
+sym2int.pl: replacing 2 with 1
+sym2int.pl: replacing 2.1.5 with 1
+sym2int.pl: replacing 3 with 1
+sym2int.pl: replacing 13 with 1
+sym2int.pl: replacing 23 with 1
+sym2int.pl: replacing 2.6 with 1
+sym2int.pl: replacing 2.2 with 1
+sym2int.pl: replacing 1 with 1
+sym2int.pl: replacing 50 with 1
+sym2int.pl: replacing 4 with 1
+sym2int.pl: replacing 4 with 1
+sym2int.pl: replacing 2 with 1
+sym2int.pl: not warning for OOVs any more times
+** Replaced 784 instances of OOVs with 1
+LOG (compile-train-graphs[5.5.0~1494-e5a5]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 3360 graphs, failed for 0
+# Accounting: time=7 threads=1
+# Ended (code 0) at Sun May  2 16:11:58 UTC 2021, elapsed time 7 seconds

@@ -1,0 +1,17 @@
+# gmm-acc-stats-ali exp/mono/15.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train.1k/split4/2/utt2spk scp:data/train.1k/split4/2/cmvn.scp scp:data/train.1k/split4/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.2.gz|" exp/mono/15.2.acc 
+# Started at Mon May 17 08:33:45 UTC 2021
+#
+gmm-acc-stats-ali exp/mono/15.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train.1k/split4/2/utt2spk scp:data/train.1k/split4/2/cmvn.scp scp:data/train.1k/split4/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.2.gz|' exp/mono/15.2.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train.1k/split4/2/utt2spk scp:data/train.1k/split4/2/cmvn.scp scp:data/train.1k/split4/2/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance M0000000028_0072 avg. like is -74.2789 over 206 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance M0000000036_0022 avg. like is -84.1342 over 306 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance M0000000043_0050 avg. like is -93.9412 over 163 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance M0000000051_0015 avg. like is -77.2722 over 270 frames.
+LOG (apply-cmvn[5.5.0~1494-e5a5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 250 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance M0000000058_0087 avg. like is -77.1858 over 123 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:112) Done 250 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -82.4649 over 70887 frames.
+LOG (gmm-acc-stats-ali[5.5.0~1494-e5a5]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon May 17 08:33:45 UTC 2021, elapsed time 0 seconds

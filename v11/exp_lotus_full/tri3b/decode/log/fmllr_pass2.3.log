@@ -1,0 +1,28 @@
+# lattice-determinize-pruned --acoustic-scale=0.083333 --beam=4.0 "ark:gunzip -c exp/tri3b/decode/lat.tmp.3.gz|" ark:- | lattice-to-post --acoustic-scale=0.083333 ark:- ark:- | weight-silence-post 0.01 1:2:3:4:5 exp/tri3b/final.mdl ark:- ark:- | gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/test/split4/3/spk2utt exp/tri3b/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/3/utt2spk scp:data/test/split4/3/cmvn.scp scp:data/test/split4/3/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split4/3/utt2spk ark:exp/tri3b/decode/pre_trans.3 ark:- ark:- |" ark,s,cs:- ark:exp/tri3b/decode/trans_tmp.3 && compose-transforms --b-is-affine=true ark:exp/tri3b/decode/trans_tmp.3 ark:exp/tri3b/decode/pre_trans.3 ark:exp/tri3b/decode/trans.3 
+# Started at Mon May 17 09:54:08 UTC 2021
+#
+gmm-est-fmllr --fmllr-update-type=full --spk2utt=ark:data/test/split4/3/spk2utt exp/tri3b/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/3/utt2spk scp:data/test/split4/3/cmvn.scp scp:data/test/split4/3/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split4/3/utt2spk ark:exp/tri3b/decode/pre_trans.3 ark:- ark:- |' ark,s,cs:- ark:exp/tri3b/decode/trans_tmp.3 
+weight-silence-post 0.01 1:2:3:4:5 exp/tri3b/final.mdl ark:- ark:- 
+lattice-determinize-pruned --acoustic-scale=0.083333 --beam=4.0 'ark:gunzip -c exp/tri3b/decode/lat.tmp.3.gz|' ark:- 
+lattice-to-post --acoustic-scale=0.083333 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split4/3/utt2spk scp:data/test/split4/3/cmvn.scp scp:data/test/split4/3/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/test/split4/3/utt2spk ark:exp/tri3b/decode/pre_trans.3 ark:- ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (lattice-determinize-pruned[5.5.0~1494-e5a5]:main():lattice-determinize-pruned.cc:159) Average input-lattice depth (measured at at state level) is 11.2116, output depth is 2.09875, over 28252 frames  (average num-frames = 276.98).
+LOG (lattice-determinize-pruned[5.5.0~1494-e5a5]:main():lattice-determinize-pruned.cc:164) Done 102 lattices, determinization finished earlier than specified by the beam (or output was empty) on 0 of these.
+LOG (lattice-to-post[5.5.0~1494-e5a5]:main():lattice-to-post.cc:106) Overall average log-like/frame is -3.54204 over 28252 frames.  Average acoustic like/frame is -3.3588
+LOG (lattice-to-post[5.5.0~1494-e5a5]:main():lattice-to-post.cc:110) Done 102 lattices.
+LOG (apply-cmvn[5.5.0~1494-e5a5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 102 utterances, errors on 0
+LOG (weight-silence-post[5.5.0~1494-e5a5]:main():weight-silence-post.cc:95) Done 102 posteriors.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -28.1793 over 28252 frames.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:161) Applied transform to 102 utterances; 0 had errors.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:158) Overall average logdet is -0.05334 over 28252 frames.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:161) Applied transform to 102 utterances; 0 had errors.
+LOG (gmm-est-fmllr[5.5.0~1494-e5a5]:ComputeFmllrMatrixDiagGmmFull():fmllr-diag-gmm.cc:262) fMLLR objf improvement is 0.211331 per frame over 15406.2 frames.
+LOG (gmm-est-fmllr[5.5.0~1494-e5a5]:main():gmm-est-fmllr.cc:143) For speaker M0000000124, auxf-impr from fMLLR is 0.211331, over 15406.2 frames.
+LOG (gmm-est-fmllr[5.5.0~1494-e5a5]:main():gmm-est-fmllr.cc:188) Done 102 files, 0 with no posts, 0 with other errors.
+LOG (gmm-est-fmllr[5.5.0~1494-e5a5]:main():gmm-est-fmllr.cc:190) Overall fMLLR auxf impr per frame is 0.211331 over 15406.2 frames.
+compose-transforms --b-is-affine=true ark:exp/tri3b/decode/trans_tmp.3 ark:exp/tri3b/decode/pre_trans.3 ark:exp/tri3b/decode/trans.3 
+# Accounting: time=6 threads=1
+# Ended (code 0) at Mon May 17 09:54:14 UTC 2021, elapsed time 6 seconds

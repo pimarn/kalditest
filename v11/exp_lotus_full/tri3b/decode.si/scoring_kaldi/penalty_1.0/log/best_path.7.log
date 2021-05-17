@@ -1,0 +1,1032 @@
+# lattice-scale --inv-acoustic-scale=7 "ark:gunzip -c exp/tri3b/decode.si/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri3b/graph/words.txt ark:- ark,t:- | utils/int2sym.pl -f 2- exp/tri3b/graph/words.txt | local/wer_hyp_filter > exp/tri3b/decode.si/scoring_kaldi/penalty_1.0/7.txt 
+# Started at Mon May 17 09:52:05 UTC 2021
+#
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=exp/tri3b/graph/words.txt ark:- ark,t:- 
+lattice-scale --inv-acoustic-scale=7 'ark:gunzip -c exp/tri3b/decode.si/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0000, best cost 13.2973 + 867.056 = 880.354 over 127 frames.
+M0000000085_0000 โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0001, best cost 49.7358 + 1593.16 = 1642.9 over 233 frames.
+M0000000085_0001 โกวาจี เอา ราดหน้า หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0002, best cost 62.5635 + 1542.14 = 1604.7 over 224 frames.
+M0000000085_0002 เอา กับข้าว ไก่ ไข่ดาว หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0003, best cost 56.6651 + 1610.15 = 1666.82 over 212 frames.
+M0000000085_0003 ส้มตำ แจ็ค มัน ครึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0004, best cost 55.5174 + 1325.03 = 1380.54 over 179 frames.
+M0000000085_0004 ข้าวผัด หมู ไข่ ดาว จันทร์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0005, best cost 69.8062 + 1425.97 = 1495.78 over 198 frames.
+M0000000085_0005 เอา ขวด ไก่ ใส่ หมู จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0006, best cost 35.2046 + 1032.05 = 1067.26 over 140 frames.
+M0000000085_0006 คุก ขวด หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0007, best cost 49.9362 + 1115.31 = 1165.25 over 165 frames.
+M0000000085_0007 น้ำแข็ง กล่าว แก้ว หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0008, best cost 53.3918 + 1423.5 = 1476.89 over 218 frames.
+M0000000085_0008 น้ำเปล่า หนึ่ง น้ำแข็ง สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0009, best cost 45.1747 + 1151.16 = 1196.33 over 174 frames.
+M0000000085_0009 ขอ น้ำแข็ง ทั้ง นึง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0010, best cost 27.125 + 953.488 = 980.613 over 135 frames.
+M0000000085_0010 ขอ รอบ หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0011, best cost 53.7564 + 970.794 = 1024.55 over 153 frames.
+M0000000085_0011 มา ห้า คน ขาด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0012, best cost 55.7761 + 1275.83 = 1331.61 over 176 frames.
+M0000000085_0012 สาม โปรด เที่ยง ครึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0013, best cost 94.0121 + 1876.78 = 1970.79 over 261 frames.
+M0000000085_0013 จอง สิบ ที่ ห้อง แอร์ สอง ทุ่ม คืน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0014, best cost 50.6548 + 1200.75 = 1251.41 over 162 frames.
+M0000000085_0014 ขอ โต แปด ที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0015, best cost 58.8779 + 1018.2 = 1077.08 over 153 frames.
+M0000000085_0015 ขอ นั่ง ต้อง นั้น หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0016, best cost 61.4207 + 1334.34 = 1395.77 over 183 frames.
+M0000000085_0016 ขอ นั่ง ติด จะ จบ นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0017, best cost 56.9172 + 1248.99 = 1305.91 over 189 frames.
+M0000000085_0017 ขอ นั่ง ไป แอร์ นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0018, best cost 43.0064 + 1167.95 = 1210.95 over 150 frames.
+M0000000085_0018 ขอ เก่า ที่สุด หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0019, best cost 67.1319 + 1322 = 1389.13 over 197 frames.
+M0000000085_0019 ขอ ย้าย ไป โต นาน นัก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0020, best cost 49.0226 + 1031.55 = 1080.57 over 162 frames.
+M0000000085_0020 ลุก ปะ ไป ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0021, best cost 34.0092 + 1028.63 = 1062.64 over 165 frames.
+M0000000085_0021 มา กิน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0022, best cost 45.8126 + 1018.27 = 1064.08 over 143 frames.
+M0000000085_0022 ชิ้น ได้ไหม อะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0023, best cost 73.5769 + 1485.62 = 1559.2 over 216 frames.
+M0000000085_0023 อาหาร อร่อย เหมือน คน ขาย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0024, best cost 31.0834 + 968.255 = 999.339 over 129 frames.
+M0000000085_0024 ขอ เครื่องปรุง หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0025, best cost 29.0381 + 811.789 = 840.827 over 119 frames.
+M0000000085_0025 คริส หมด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0026, best cost 59.053 + 1296.09 = 1355.14 over 188 frames.
+M0000000085_0026 มี น้ำจิ้ม สุด ที่ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0027, best cost 80.718 + 1634.76 = 1715.47 over 227 frames.
+M0000000085_0027 เอา ซอส หรือ ที่ ให้ หน่อย จะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0028, best cost 53.3947 + 1349.18 = 1402.57 over 188 frames.
+M0000000085_0028 ขอ น้ำจิ้ม เพิ่ม ไหน ทราบ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0029, best cost 36.0737 + 984.701 = 1020.77 over 153 frames.
+M0000000085_0029 จะ เสร็จ หรือ ยัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0030, best cost 32.2976 + 1036.41 = 1068.71 over 167 frames.
+M0000000085_0030 พรุ่ง อะไร ได้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0031, best cost 49.8977 + 1150.24 = 1200.14 over 171 frames.
+M0000000085_0031 อาหาร จะ มา กี่ โมง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0032, best cost 48.4118 + 1105.71 = 1154.12 over 171 frames.
+M0000000085_0032 ต้อง รอ อีก นาน ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0033, best cost 39.4669 + 849.676 = 889.143 over 126 frames.
+M0000000085_0033 เมื่อไหร่ เกษตร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0034, best cost 42.4098 + 945.167 = 987.577 over 150 frames.
+M0000000085_0034 ร้อน นาน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0035, best cost 37.6924 + 840.504 = 878.196 over 135 frames.
+M0000000085_0035 ไม่ กี่ แล้ว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0036, best cost 38.0251 + 1236.75 = 1274.77 over 179 frames.
+M0000000085_0036 ขอ เปลี่ยน เมนู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0037, best cost 40.3792 + 988.002 = 1028.38 over 147 frames.
+M0000000085_0037 ไม่ เอา รับ ฝาก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0038, best cost 46.2675 + 1067.28 = 1113.55 over 150 frames.
+M0000000085_0038 ปลุก ข้าว หลอด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0039, best cost 61.0177 + 1295.86 = 1356.88 over 177 frames.
+M0000000085_0039 ย้าย ไป โต๊ะ สาม นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0040, best cost 59.3534 + 1096.43 = 1155.78 over 156 frames.
+M0000000085_0040 ย้าย ไป ต่อ สอง นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0041, best cost 71.8842 + 1437.61 = 1509.49 over 209 frames.
+M0000000085_0041 เอา โต ตัวนำ มา ต่อ ได้มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0042, best cost 64.4601 + 1173.17 = 1237.63 over 162 frames.
+M0000000085_0042 อยาก ย้าย ไป ห้อง แอร์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0043, best cost 43.0136 + 949.078 = 992.091 over 146 frames.
+M0000000085_0043 ชั้น บน ว่าง ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0044, best cost 34.2356 + 978.77 = 1013.01 over 146 frames.
+M0000000085_0044 เจ็ด ตังค์ ด้วย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0045, best cost 33.2541 + 1441.03 = 1474.28 over 183 frames.
+M0000000085_0045 รับ บัตร เครดิต ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0046, best cost 34.1388 + 1046.59 = 1080.73 over 144 frames.
+M0000000085_0046 เอา ที่ ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0047, best cost 43.9707 + 1177.17 = 1221.14 over 159 frames.
+M0000000085_0047 แสดง จ่าย ได้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0048, best cost 44.4149 + 1267.1 = 1311.51 over 186 frames.
+M0000000085_0048 มี โปรโมชั่น ไร ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0049, best cost 38.3054 + 922.301 = 960.607 over 137 frames.
+M0000000085_0049 ไม่ อะไร เลย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0050, best cost 35.7282 + 965.515 = 1001.24 over 143 frames.
+M0000000085_0050 รสชาติ แลนด์มาร์ค 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0051, best cost 48.5176 + 1041.63 = 1090.15 over 144 frames.
+M0000000085_0051 อาเจียน หนึ่ง ชาว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0052, best cost 50.2642 + 1152.38 = 1202.65 over 149 frames.
+M0000000085_0052 เจ็ด เดือน ไป ฟาก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0053, best cost 59.5601 + 1187.05 = 1246.61 over 173 frames.
+M0000000085_0053 วันนี้ อร่อย มาก หรือ ฝาด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0054, best cost 33.1097 + 966.959 = 1000.07 over 131 frames.
+M0000000085_0054 ปิด ประตู หวาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0055, best cost 46.9842 + 897.854 = 944.838 over 141 frames.
+M0000000085_0055 พัน ห้า โมง ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0056, best cost 88.9446 + 1646.22 = 1735.17 over 237 frames.
+M0000000085_0056 กิน ครึ่ง การ รักษา ครึ่ง เดียว ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0057, best cost 44.4036 + 903.083 = 947.486 over 134 frames.
+M0000000085_0057 ไม่ ต้อง ถอน โมง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0058, best cost 43.5207 + 1017.42 = 1060.94 over 156 frames.
+M0000000085_0058 ล้าง จันทร์ ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0059, best cost 43.5599 + 1449.36 = 1492.92 over 192 frames.
+M0000000085_0059 กับข้าว หมูสับ เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0060, best cost 49.5407 + 1404.5 = 1454.04 over 186 frames.
+M0000000085_0060 ต้มยำ กุ้ง เผ็ด มาก มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0061, best cost 73.2884 + 1123.76 = 1197.05 over 164 frames.
+M0000000085_0061 โอ จ่าย ได้ ใน ทราบ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0062, best cost 34.5749 + 975.511 = 1010.09 over 144 frames.
+M0000000085_0062 มี ของ เรียน มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0063, best cost 38.5122 + 1052.93 = 1091.44 over 155 frames.
+M0000000085_0063 เมนู นี้ อร่อย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0064, best cost 44.1285 + 1096 = 1140.13 over 161 frames.
+M0000000085_0064 ซ้อน กัน สี่ สิบ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0065, best cost 47.5415 + 1286.78 = 1334.32 over 164 frames.
+M0000000085_0065 ขอ ที่ ชั่วคราว หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0066, best cost 47.1861 + 1123.97 = 1171.16 over 144 frames.
+M0000000085_0066 กระเทียม หมด ค่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0067, best cost 47.7302 + 1055.75 = 1103.48 over 161 frames.
+M0000000085_0067 ขอ มี ปั่น นึง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0068, best cost 63.9906 + 1286.12 = 1350.11 over 185 frames.
+M0000000085_0068 ขอ จันทร์ แบ่ง สอง จันทร์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0069, best cost 26.169 + 1061.84 = 1088.01 over 164 frames.
+M0000000085_0069 มี ที่นั่ง ว่าง ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0070, best cost 28.8229 + 1061.79 = 1090.61 over 162 frames.
+M0000000085_0070 ขอ เมนู หน่อย สิ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0071, best cost 66.6915 + 1233.7 = 1300.39 over 164 frames.
+M0000000085_0071 ร้าน นี้ มี คุก วิป ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0072, best cost 67.153 + 1347.02 = 1414.17 over 191 frames.
+M0000000085_0072 คน จีน มา กิน บ่อย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0073, best cost 70.3948 + 1559.59 = 1629.99 over 224 frames.
+M0000000085_0073 ถ้า ไป ระหว่าง ทำ อาหาร นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0074, best cost 55.3507 + 1025.8 = 1081.15 over 144 frames.
+M0000000085_0074 หลับ เด็ก สลับ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0075, best cost 65.944 + 1573.35 = 1639.3 over 201 frames.
+M0000000085_0075 อยาก สมัคร งาน ต่อไป อยู่ เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0076, best cost 62.0678 + 1298.95 = 1361.02 over 188 frames.
+M0000000085_0076 ยัง ไม่ กิน อาหาร รับ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0077, best cost 88.3405 + 1640.98 = 1729.32 over 231 frames.
+M0000000085_0077 ไม่ มี สร้าง ร้าน จาน แทน ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0078, best cost 73.0868 + 1469.08 = 1542.17 over 206 frames.
+M0000000085_0078 อยาก ซื้อ ร้าน ต่อ ขาย เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0079, best cost 48.9458 + 1089.92 = 1138.87 over 176 frames.
+M0000000085_0079 ขาย แสง ใช้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0080, best cost 85.6215 + 1541.69 = 1627.31 over 218 frames.
+M0000000085_0080 อยาก เปิด สาขา บ้าง ต้อง ทำ ใน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0081, best cost 90.0014 + 2057.87 = 2147.87 over 290 frames.
+M0000000085_0081 ตก สวย จัง ยัง ได้ ขาย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0082, best cost 91.8127 + 1749.47 = 1841.28 over 243 frames.
+M0000000085_0082 หน้า จะ ไป เปิด ล้าน ต้อง เสีย นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0083, best cost 46.9528 + 1336.46 = 1383.41 over 191 frames.
+M0000000085_0083 ก๋วยเตี๋ยว ส่าย ดี มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0084, best cost 58.1818 + 1179.02 = 1237.2 over 164 frames.
+M0000000085_0084 ซื้อ จะ กี่ เป็น ใช้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0085, best cost 55.9335 + 1345.84 = 1401.77 over 203 frames.
+M0000000085_0085 ขาย อาหาร รายได้ ดี มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0086, best cost 72.6252 + 1347.8 = 1420.43 over 203 frames.
+M0000000085_0086 วัน หนึ่ง ขาย ได้ เยอะ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0087, best cost 52.7673 + 1100.41 = 1153.18 over 176 frames.
+M0000000085_0087 เปลี่ยน ใน ยก ได้ มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0088, best cost 60.599 + 1324.71 = 1385.31 over 179 frames.
+M0000000085_0088 ใช้ หมู ย้อน จาก ที่ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0089, best cost 64.5451 + 1187.69 = 1252.23 over 167 frames.
+M0000000085_0089 ต้อง ใส่ น้ำตาล กี่ สอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0090, best cost 57.4576 + 1456.65 = 1514.1 over 203 frames.
+M0000000085_0090 ทำ หมู กรอบ ยัง ใน ร้านค้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0091, best cost 69.0889 + 1222.49 = 1291.58 over 161 frames.
+M0000000085_0091 ใส่ บน ชั่ว ลด รึ ป่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0092, best cost 39.3879 + 975.373 = 1014.76 over 147 frames.
+M0000000085_0092 ใส่ หมู รึ ป่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0093, best cost 50.4666 + 1021.43 = 1071.9 over 152 frames.
+M0000000085_0093 เอา เป็น ซ้าย จาน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0094, best cost 55.6929 + 1359.22 = 1414.91 over 198 frames.
+M0000000085_0094 เอา ด้วย รอด จาน นึง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0095, best cost 70.3319 + 1324.53 = 1394.86 over 200 frames.
+M0000000085_0095 ทำ บัว ลอย ใส่ หวาน ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0096, best cost 90.0706 + 1480.44 = 1570.51 over 194 frames.
+M0000000085_0096 ลุก สิ้น นก เป็น บิน ไม้ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0097, best cost 57.4811 + 1206.48 = 1263.96 over 167 frames.
+M0000000085_0097 มา ส่ง ที่ หอ ให้ หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0098, best cost 80.1747 + 1302.47 = 1382.65 over 189 frames.
+M0000000085_0098 มา ส่ง ที่ บ้าน ได้ ไม่ สับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0099, best cost 60.2644 + 1049.79 = 1110.06 over 138 frames.
+M0000000085_0099 เดียว ลง ไป เอา ปะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0100, best cost 70.7086 + 1384.29 = 1455 over 206 frames.
+M0000000085_0100 หยุด เดิน ไป เอา กีฬา นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000085_0101, best cost 98.0099 + 1936.15 = 2034.16 over 266 frames.
+M0000000085_0101 อยู่ ไส้ จะ ขาด แล้ว อะไร ก็ได้ จาน นึง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0000, best cost 14.7012 + 899.314 = 914.015 over 178 frames.
+M0000000105_0000 โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0001, best cost 54.3995 + 2184.73 = 2239.13 over 366 frames.
+M0000000105_0001 โกวาจี เอา ราดหน้า หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0002, best cost 64.3324 + 2032.81 = 2097.14 over 314 frames.
+M0000000105_0002 เอา กะเพรา ไป ไข่ดาว หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0003, best cost 59.2046 + 1909.58 = 1968.78 over 257 frames.
+M0000000105_0003 ส้มตำ ผลิต แบบ คืน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0004, best cost 61.9931 + 1956.48 = 2018.47 over 316 frames.
+M0000000105_0004 ข้าวผัด หมู ไข่ดาว จาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0005, best cost 85.7331 + 1919.99 = 2005.72 over 309 frames.
+M0000000105_0005 เอา คั่ว ตาย ไซ หมู จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0006, best cost 32.5853 + 1426.04 = 1458.62 over 220 frames.
+M0000000105_0006 ขอ ขวด หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0007, best cost 56.6145 + 1645.57 = 1702.19 over 271 frames.
+M0000000105_0007 น้ำแข็ง ป่าว แก้ว หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0008, best cost 74.5353 + 2072.04 = 2146.58 over 350 frames.
+M0000000105_0008 น้ำ เปล่า หนึ่ง น้ำแข็ง สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0009, best cost 41.8354 + 1557.58 = 1599.42 over 252 frames.
+M0000000105_0009 ขอ น้ำแข็ง สาม หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0010, best cost 34.9823 + 1266.88 = 1301.86 over 235 frames.
+M0000000105_0010 ขอ หลอด หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0011, best cost 51.8441 + 1049.24 = 1101.08 over 178 frames.
+M0000000105_0011 มา ห้า คน ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0012, best cost 48.7019 + 1244.78 = 1293.48 over 172 frames.
+M0000000105_0012 สาม โต๊ะ เที่ยง คืน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0013, best cost 111.001 + 3638.2 = 3749.2 over 646 frames.
+M0000000105_0013 จอง สิบ ที่ ห้อง แป สอง ทุ่ม คืน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0014, best cost 50.6825 + 1295.41 = 1346.1 over 213 frames.
+M0000000105_0014 ขอ โต๊ะ แปด ที่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0015, best cost 62.5193 + 1437.62 = 1500.14 over 252 frames.
+M0000000105_0015 ขอ นั่ง ตรง นาน มา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0016, best cost 64.9515 + 1761.65 = 1826.6 over 252 frames.
+M0000000105_0016 ขอ นั่ง ติด ประจุ มา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0017, best cost 59.4043 + 1117.74 = 1177.14 over 193 frames.
+M0000000105_0017 ขอ นั่ง ไป แอนด์ นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0018, best cost 61.7014 + 1613.84 = 1675.54 over 238 frames.
+M0000000105_0018 ขอ ก็ ที่ ศูนย์ นอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0019, best cost 75.7706 + 1441.84 = 1517.61 over 236 frames.
+M0000000105_0019 ขอ ย้าย ไป โปรด น้ำ มา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0020, best cost 51.9389 + 1133.78 = 1185.72 over 190 frames.
+M0000000105_0020 ดู บาป ไป ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0021, best cost 38.0548 + 810.31 = 848.364 over 142 frames.
+M0000000105_0021 น่า กิน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0022, best cost 51.9506 + 1057.06 = 1109.02 over 176 frames.
+M0000000105_0022 ชิ้น ได้ ไหม อะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0023, best cost 76.1182 + 1690.58 = 1766.7 over 273 frames.
+M0000000105_0023 อาหาร อร่อย เหมือน คน ขาย มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0024, best cost 34.2331 + 1305.19 = 1339.42 over 201 frames.
+M0000000105_0024 ขอ เครื่องปรุง หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0025, best cost 33.3113 + 733.384 = 766.695 over 111 frames.
+M0000000105_0025 พริก หมด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0026, best cost 66.3052 + 1768.66 = 1834.97 over 292 frames.
+M0000000105_0026 มี น้ำ จีน สุกี้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0027, best cost 100.071 + 2376.93 = 2477 over 373 frames.
+M0000000105_0027 เอา ซอส มา เสื้อ เชิร์ต ให้ หน่อย จะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0028, best cost 58.5538 + 1895.96 = 1954.51 over 298 frames.
+M0000000105_0028 ขอ น้ำจิ้ม เพิ่ม หน่อย ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0029, best cost 39.9209 + 1314.51 = 1354.43 over 216 frames.
+M0000000105_0029 จะ เสร็จ หรือ ยัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0030, best cost 38.3608 + 1322.52 = 1360.88 over 212 frames.
+M0000000105_0030 คั่ว อะไร ได้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0031, best cost 68.0978 + 1439.48 = 1507.58 over 255 frames.
+M0000000105_0031 อาหาร จะ มา จี โมง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0032, best cost 51.8226 + 1598.56 = 1650.38 over 267 frames.
+M0000000105_0032 ตอง เวอร์ อีก นาน ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0033, best cost 64.4145 + 1207.66 = 1272.08 over 215 frames.
+M0000000105_0033 เมื่อ ไร จะ เศษ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0034, best cost 45.7299 + 1066.94 = 1112.67 over 198 frames.
+M0000000105_0034 วอล นาน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0035, best cost 43.5822 + 1262.57 = 1306.16 over 249 frames.
+M0000000105_0035 ไม่ กิน แล้ว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0036, best cost 38.4487 + 1279.88 = 1318.33 over 221 frames.
+M0000000105_0036 ขอ เปลี่ยน เมนู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0037, best cost 49.7411 + 1331.27 = 1381.01 over 209 frames.
+M0000000105_0037 ไม่ เอา แล้ว ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0038, best cost 61.1158 + 1761.49 = 1822.6 over 307 frames.
+M0000000105_0038 ดู ข้าว ยู เปิด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0039, best cost 67.9813 + 1380.35 = 1448.33 over 234 frames.
+M0000000105_0039 ย้าย ไป โต๊ะ สาม มา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0040, best cost 64.1285 + 1528.12 = 1592.25 over 245 frames.
+M0000000105_0040 ย้าย ไป ตก สอง หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0041, best cost 99.3739 + 2353.99 = 2453.36 over 385 frames.
+M0000000105_0041 เอา โต๊ะ ตัว นาน มา ต่อ ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0042, best cost 67.9092 + 1665.11 = 1733.02 over 279 frames.
+M0000000105_0042 อยาก ย้าย ไป ของ แอร์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0043, best cost 53.8333 + 1669.26 = 1723.1 over 264 frames.
+M0000000105_0043 ฉัน บน ว่า ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0044, best cost 37.4219 + 1188.91 = 1226.33 over 190 frames.
+M0000000105_0044 เจ็ด ตังค์ ด้วย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0045, best cost 37.9454 + 1631.87 = 1669.81 over 280 frames.
+M0000000105_0045 รับ บัตร เครดิต ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0046, best cost 38.3397 + 1085.48 = 1123.82 over 187 frames.
+M0000000105_0046 เอา ที่ ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0047, best cost 68.1608 + 1459.76 = 1527.92 over 236 frames.
+M0000000105_0047 จะ เป็น จ่าย ได้ ปา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0048, best cost 54.9963 + 1826.41 = 1881.41 over 325 frames.
+M0000000105_0048 มี โปรโมชัน ไร ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0049, best cost 49.9218 + 1273.41 = 1323.33 over 220 frames.
+M0000000105_0049 ไม่ เอา วัย เลย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0050, best cost 51.4637 + 1248.2 = 1299.66 over 205 frames.
+M0000000105_0050 รสชาติ แล มาก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0051, best cost 69.1269 + 1679.67 = 1748.8 over 305 frames.
+M0000000105_0051 ลา เค็ม เหม็น ข่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0052, best cost 58.4517 + 1358.68 = 1417.14 over 220 frames.
+M0000000105_0052 เพชร เกิน ไป รับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0053, best cost 96.9913 + 2227.87 = 2324.86 over 376 frames.
+M0000000105_0053 วัน นี้ เอา รอย มาก เลย รับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0054, best cost 46.7104 + 1108.83 = 1155.54 over 194 frames.
+M0000000105_0054 ปิด ไว้ ก่อน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0055, best cost 53.4233 + 1230.7 = 1284.12 over 202 frames.
+M0000000105_0055 พัน ห้า ขอ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0056, best cost 116.367 + 2782.88 = 2899.25 over 450 frames.
+M0000000105_0056 กิน คลื่น จาก แป้น ราคา กึ่ง เดียว ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0057, best cost 51.7006 + 1047.01 = 1098.71 over 187 frames.
+M0000000105_0057 ใหม่ ต้อง ขอม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0058, best cost 49.6118 + 1250.34 = 1299.95 over 215 frames.
+M0000000105_0058 บาง จันทร์ บ้าน ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0059, best cost 43.0046 + 1620.22 = 1663.22 over 273 frames.
+M0000000105_0059 กะเพรา หมูสับ เท่าไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0060, best cost 57.1272 + 2105.71 = 2162.83 over 331 frames.
+M0000000105_0060 ต้มยำ กุ้ง เผ็ด มาก ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0061, best cost 74.1371 + 1529.53 = 1603.67 over 256 frames.
+M0000000105_0061 โอ จ่าย ได้ ไหม ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0062, best cost 51.9947 + 1232.87 = 1284.86 over 209 frames.
+M0000000105_0062 มี พร้อม คลื่น ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0063, best cost 61.3319 + 1606.9 = 1668.23 over 264 frames.
+M0000000105_0063 เมนู นี้ เอา รอย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0064, best cost 65.6488 + 1474.73 = 1540.38 over 220 frames.
+M0000000105_0064 สอน กลาง ที่ ไซส์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0065, best cost 69.5245 + 1662.65 = 1732.18 over 273 frames.
+M0000000105_0065 ขอ จุด สู่ เพิ่ม หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0066, best cost 62.7462 + 1336.5 = 1399.25 over 194 frames.
+M0000000105_0066 จะ เทียบ หมด ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0067, best cost 48.1417 + 1366.6 = 1414.74 over 212 frames.
+M0000000105_0067 ขอ มี ปั่น หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0068, best cost 75.9485 + 1767.85 = 1843.8 over 279 frames.
+M0000000105_0068 ขอ จันทร์ แบน สอง ก้าม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0069, best cost 68.0415 + 1645.91 = 1713.95 over 272 frames.
+M0000000105_0069 มี ที่ หลัก มือ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0070, best cost 42.2376 + 1283.16 = 1325.39 over 219 frames.
+M0000000105_0070 ขอ เมนู หน่อย สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0071, best cost 75.5681 + 1943.89 = 2019.46 over 320 frames.
+M0000000105_0071 ลั่น นี้ มี โค วิป ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0072, best cost 73.6391 + 1973.65 = 2047.28 over 332 frames.
+M0000000105_0072 คน จีน มา กิน บ่อย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0073, best cost 79.1665 + 2460.38 = 2539.55 over 393 frames.
+M0000000105_0073 ข้าม ไป ระหว่าง ทำ อาหาร นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0074, best cost 53.5303 + 1501.01 = 1554.54 over 257 frames.
+M0000000105_0074 รับ เด็ด ส่วนลด ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0075, best cost 80.9308 + 2288.58 = 2369.51 over 378 frames.
+M0000000105_0075 อยาก สมัคร งาน ต้อง อายุ เท่าไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0076, best cost 77.9457 + 2047.77 = 2125.72 over 330 frames.
+M0000000105_0076 ยัง ไม่ เตือน จะ หาร รับ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0077, best cost 103.933 + 2549.86 = 2653.79 over 435 frames.
+M0000000105_0077 ไม่ มี ตาล ล้าง จันทร์ แฟน ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0078, best cost 83.5263 + 2200.56 = 2284.09 over 373 frames.
+M0000000105_0078 อยาก ซื้อ ร้าน ต่อ ขาย เท่าไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0079, best cost 61.0309 + 1569.77 = 1630.8 over 266 frames.
+M0000000105_0079 ขาย คืน คล้าย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0080, best cost 96.9153 + 2341.24 = 2438.15 over 408 frames.
+M0000000105_0080 อยาก เปิด สาขา บ้าง ต้อง สาม ไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0081, best cost 96.9501 + 2347.72 = 2444.67 over 394 frames.
+M0000000105_0081 โต๊ะ สวย จัง อยาก ได้ ขาย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0082, best cost 120.369 + 2541.69 = 2662.05 over 429 frames.
+M0000000105_0082 หน้า จะ ไป เปิด ร้าน จง สี่ แยก นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0083, best cost 45.1433 + 1658.04 = 1703.18 over 257 frames.
+M0000000105_0083 ก๋วยเตี๋ยว ขาย ดี มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0084, best cost 65.7842 + 1696.2 = 1761.99 over 271 frames.
+M0000000105_0084 สิบเอ็ด ติด เป็น ไร บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0085, best cost 77.4765 + 1977.17 = 2054.64 over 335 frames.
+M0000000105_0085 ข่าย อาหาร ไป ได้ ดี ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0086, best cost 87.4379 + 1922.71 = 2010.15 over 334 frames.
+M0000000105_0086 วัน นึง ขาย จ่าย ซื้อ ป่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0087, best cost 59.2512 + 1568.38 = 1627.64 over 259 frames.
+M0000000105_0087 เปลี่ยน หน้า ยก ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0088, best cost 67.522 + 2133.46 = 2200.99 over 295 frames.
+M0000000105_0088 ใช้ หมู ย้อน จาก ที่ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0089, best cost 69.866 + 1668.88 = 1738.75 over 249 frames.
+M0000000105_0089 ต้อง ใส่ น้ำตาล กี่ สอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0090, best cost 88.6748 + 2018.9 = 2107.58 over 328 frames.
+M0000000105_0090 ทำ หมู กรอบ ยัง นาย รถ ขาด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0091, best cost 71.2294 + 1601.65 = 1672.88 over 263 frames.
+M0000000105_0091 ใส่ ของ สู่ ลด หรือ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0092, best cost 43.3102 + 1400.97 = 1444.28 over 230 frames.
+M0000000105_0092 ใส่ หมู หรือ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0093, best cost 60.8305 + 1632.07 = 1692.9 over 289 frames.
+M0000000105_0093 เอา แฟน ไฟ จาน นึง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0094, best cost 89.13 + 3292.99 = 3382.12 over 615 frames.
+M0000000105_0094 เอา กล้วย ทอด จันทร์ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0095, best cost 79.2821 + 2081.87 = 2161.15 over 363 frames.
+M0000000105_0095 ทำ บัว ลอย ไข่ หวาน ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0096, best cost 95.4838 + 1998.62 = 2094.11 over 337 frames.
+M0000000105_0096 ลุก ชิ้น นก เป็น ควีน ไม้ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0097, best cost 66.5303 + 1864.34 = 1930.87 over 294 frames.
+M0000000105_0097 มา ส่ง ที่ ของ ให้ หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0098, best cost 100.575 + 2459.64 = 2560.22 over 390 frames.
+M0000000105_0098 มา ส่ง ใคร ที่ บ้าน ได้ ไหม ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0099, best cost 68.0358 + 1648.54 = 1716.57 over 273 frames.
+M0000000105_0099 เดียว ลง ไป เอา ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0100, best cost 89.4883 + 2216.97 = 2306.45 over 361 frames.
+M0000000105_0100 เดียว เดิน ไป เอา ที่ ร้าน นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000105_0101, best cost 118.361 + 3297.8 = 3416.16 over 544 frames.
+M0000000105_0101 อยู่ ใส่ จะ ขาด แล้ว อะไร ก็ ได้ จาก หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0000, best cost 18.8338 + 1574.4 = 1593.23 over 210 frames.
+M0000000107_0000 โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0001, best cost 59.4681 + 3138.37 = 3197.84 over 423 frames.
+M0000000107_0001 โกวาจี เอา ราดหน้า หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0002, best cost 64.8001 + 2541.93 = 2606.73 over 325 frames.
+M0000000107_0002 เอา แต้ม เข้าไป ไข่ดาว หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0003, best cost 72.0018 + 1962.73 = 2034.74 over 276 frames.
+M0000000107_0003 ช่วง ต่ำ กิน ขึ้น เหมือน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0004, best cost 55.9508 + 1929.45 = 1985.4 over 260 frames.
+M0000000107_0004 ข้าวผัด หมู ไข่ดาว จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0005, best cost 76.471 + 1928.55 = 2005.02 over 236 frames.
+M0000000107_0005 เอา หัว ไก่ ใช้ บุตร จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0006, best cost 33.991 + 1463.92 = 1497.91 over 177 frames.
+M0000000107_0006 คู่ ขวด หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0007, best cost 58.7418 + 1604.57 = 1663.31 over 207 frames.
+M0000000107_0007 น้ำ เสร็จ ป่าว แก้ว หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0008, best cost 57.9748 + 2050.72 = 2108.7 over 266 frames.
+M0000000107_0008 น้ำเปล่า หนึ่ง น้ำแข็ง สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0009, best cost 49.7864 + 1865.3 = 1915.09 over 239 frames.
+M0000000107_0009 ขอ น้ำแข็ง ทั้ง เรียน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0010, best cost 33.4624 + 1635.29 = 1668.76 over 244 frames.
+M0000000107_0010 ขอ รอบ หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0011, best cost 56.1277 + 1404.42 = 1460.54 over 176 frames.
+M0000000107_0011 หมา ห้า คน สับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0012, best cost 61.6217 + 1753.43 = 1815.05 over 230 frames.
+M0000000107_0012 สร้าง ต่อ เที่ยง ครึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0013, best cost 101.338 + 3437.32 = 3538.65 over 430 frames.
+M0000000107_0013 จอง สิบ ที่ ห้อง แอร์ สอง ทุ่ม ครึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0014, best cost 44.0379 + 1737.95 = 1781.99 over 219 frames.
+M0000000107_0014 ขอ ต่อไป ที่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0015, best cost 60.1869 + 1679.02 = 1739.21 over 224 frames.
+M0000000107_0015 ขอ นั่ง ตรง นำ มา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0016, best cost 68.7111 + 2288.13 = 2356.84 over 265 frames.
+M0000000107_0016 ขอ นั่ง ติด กระทะ จบ มา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0017, best cost 55.4834 + 1659.47 = 1714.96 over 219 frames.
+M0000000107_0017 ขอ นอน ไป เอ็ม นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0018, best cost 48.3451 + 1513.98 = 1562.33 over 197 frames.
+M0000000107_0018 ขอ กับ ที่ สาม วัน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0019, best cost 66.5632 + 1864.93 = 1931.49 over 253 frames.
+M0000000107_0019 ย้าย ไป ตก นาน นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0020, best cost 40.319 + 1441.51 = 1481.83 over 179 frames.
+M0000000107_0020 ลูกเต๋า เป็น ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0021, best cost 42.5903 + 1352.53 = 1395.12 over 174 frames.
+M0000000107_0021 น่า กิน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0022, best cost 64.3332 + 1976.23 = 2040.56 over 282 frames.
+M0000000107_0022 คิล หน้า ไหม ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0023, best cost 83.1602 + 2213.16 = 2296.32 over 295 frames.
+M0000000107_0023 อาหาร อร่อย เหมือน คน ข่าย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0024, best cost 35.778 + 1504.8 = 1540.57 over 188 frames.
+M0000000107_0024 ขอ เครื่องปรุง หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0025, best cost 35.9537 + 1231.89 = 1267.84 over 159 frames.
+M0000000107_0025 คริส หมด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0026, best cost 55.994 + 1794.67 = 1850.67 over 233 frames.
+M0000000107_0026 มี นัด กิน สุด ที่ ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0027, best cost 94.73 + 1950.41 = 2045.14 over 259 frames.
+M0000000107_0027 เอา สอบ เป็น เลือด เอช ให้ หน่อย จะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0028, best cost 55.2331 + 1890.54 = 1945.77 over 249 frames.
+M0000000107_0028 ขอ น้ำจิ้ม เพิ่ม ใหม่ ขาว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0029, best cost 39.8377 + 1415.09 = 1454.93 over 202 frames.
+M0000000107_0029 จะ เสร็จ หรือ ยัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0030, best cost 38.8586 + 1786.05 = 1824.91 over 236 frames.
+M0000000107_0030 ทุ่ม อะไร ได้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0031, best cost 55.6883 + 1655.16 = 1710.84 over 246 frames.
+M0000000107_0031 อาหาร จะ มา กี่ โมง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0032, best cost 53.4261 + 2125.01 = 2178.44 over 297 frames.
+M0000000107_0032 ต้อง รอ อีก นาน ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0033, best cost 51.4232 + 1429.83 = 1481.25 over 209 frames.
+M0000000107_0033 เลือก ไหร่ เกษตร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0034, best cost 45.2324 + 1197.05 = 1242.28 over 158 frames.
+M0000000107_0034 ร้อน นาน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0035, best cost 34.9252 + 1201.46 = 1236.39 over 181 frames.
+M0000000107_0035 ไม่ ที่แล้ว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0036, best cost 41.0303 + 1350.79 = 1391.82 over 208 frames.
+M0000000107_0036 ขอ เปลี่ยน เมนู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0037, best cost 49.8306 + 1623.61 = 1673.44 over 230 frames.
+M0000000107_0037 ไม่ เอา แล้ว ข้าม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0038, best cost 56.3605 + 1457.91 = 1514.27 over 174 frames.
+M0000000107_0038 ปลุก ข้าว อยู่ หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0039, best cost 49.1664 + 1776.82 = 1825.99 over 224 frames.
+M0000000107_0039 แล้ว ไป ตก สาม นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0040, best cost 56.9579 + 1846.01 = 1902.97 over 257 frames.
+M0000000107_0040 ย้าย ติดต่อ ของ นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0041, best cost 65.6924 + 1996.55 = 2062.24 over 263 frames.
+M0000000107_0041 เอา ต่อ ผลไม้ ต่อ ได้ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0042, best cost 56.8095 + 1472.31 = 1529.12 over 201 frames.
+M0000000107_0042 อยาก ยา ไป เข้าใจ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0043, best cost 46.7305 + 1460.14 = 1506.87 over 189 frames.
+M0000000107_0043 ชั้น บน ว่าง ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0044, best cost 39.9996 + 1356.22 = 1396.22 over 181 frames.
+M0000000107_0044 เจ็ด ตังค์ ด้วย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0045, best cost 38.8 + 1956.41 = 1995.21 over 251 frames.
+M0000000107_0045 รับ บัตร เครดิต ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0046, best cost 41.7309 + 1389.74 = 1431.47 over 194 frames.
+M0000000107_0046 เอา สิบ ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0047, best cost 58.8544 + 1563.43 = 1622.28 over 215 frames.
+M0000000107_0047 เซ็ต แกน จะ ได้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0048, best cost 41.8296 + 1790.6 = 1832.43 over 237 frames.
+M0000000107_0048 มี โปรโมชั่น ไป ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0049, best cost 41.6793 + 1214.98 = 1256.66 over 178 frames.
+M0000000107_0049 ไม่ อร่อย เลย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0050, best cost 51.1461 + 1401.27 = 1452.42 over 195 frames.
+M0000000107_0050 ลด ถ้า เตือน มาก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0051, best cost 46.6723 + 1383.61 = 1430.29 over 198 frames.
+M0000000107_0051 กระเทียม หนึ่ง ข่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0052, best cost 50.2965 + 1572.1 = 1622.4 over 215 frames.
+M0000000107_0052 เจ็ด เดือน ไป ค่ะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0053, best cost 77.4993 + 1818.89 = 1896.39 over 229 frames.
+M0000000107_0053 วันนี้ เอา ร้อย หน้า ไป ค่ะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0054, best cost 39.6012 + 1246.48 = 1286.08 over 161 frames.
+M0000000107_0054 ปิด ไม่ ตอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0055, best cost 52.0752 + 1403.33 = 1455.41 over 193 frames.
+M0000000107_0055 ชั้น ห้า พ้อง ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0056, best cost 102.598 + 2560.76 = 2663.36 over 343 frames.
+M0000000107_0056 กิน ครึ่ง จันทร์ จ่าย ขึ้น เดียว ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0057, best cost 40.9456 + 1110.68 = 1151.62 over 163 frames.
+M0000000107_0057 ไม่ ต้อง ขอม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0058, best cost 46.4696 + 1318.61 = 1365.08 over 179 frames.
+M0000000107_0058 ลาน จันทร์ ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0059, best cost 48.6791 + 1645.38 = 1694.06 over 220 frames.
+M0000000107_0059 กับข้าว หมูสับ เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0060, best cost 69.8136 + 2374.69 = 2444.5 over 320 frames.
+M0000000107_0060 ต้มยำ พุ่ง เผ็ด มาก ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0061, best cost 68.6252 + 1593.56 = 1662.19 over 233 frames.
+M0000000107_0061 อุ้ม จ่าย ได้ ไหน ค่ะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0062, best cost 42.9496 + 1331.24 = 1374.19 over 192 frames.
+M0000000107_0062 มี ท้องเสีย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0063, best cost 44.1262 + 1546.07 = 1590.19 over 228 frames.
+M0000000107_0063 เมนู นี้ อร่อย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0064, best cost 46.2678 + 1284.98 = 1331.25 over 176 frames.
+M0000000107_0064 ชอบ ร้าน สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0065, best cost 60.7797 + 1751.76 = 1812.54 over 216 frames.
+M0000000107_0065 ขอ ที่ ช่วง เพิ่ม ใหม่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0066, best cost 44.8366 + 1551.04 = 1595.88 over 192 frames.
+M0000000107_0066 เสร็จเรียบร้อย ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0067, best cost 47.2267 + 1531.7 = 1578.93 over 201 frames.
+M0000000107_0067 ขอ ที่ กัน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0068, best cost 57.6942 + 2361.63 = 2419.32 over 298 frames.
+M0000000107_0068 ขอ จันทร์ เป็น สอง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0069, best cost 45.097 + 1366.65 = 1411.75 over 185 frames.
+M0000000107_0069 มี ที่ นั่ง หมื่น ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0070, best cost 52.0189 + 1599.56 = 1651.58 over 228 frames.
+M0000000107_0070 ขอ ได้ ดู หน่อย สิ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0071, best cost 65.3296 + 1787.88 = 1853.21 over 229 frames.
+M0000000107_0071 ร้าน นี้ มี ขุด ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0072, best cost 67.8225 + 1958.17 = 2026 over 277 frames.
+M0000000107_0072 คน จีน ไหม กิน บ่อย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0073, best cost 77.5889 + 2111.71 = 2189.3 over 284 frames.
+M0000000107_0073 ชั้น ไทย ระหว่าง ทำ อาหาร นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0074, best cost 59.2858 + 1714.79 = 1774.08 over 228 frames.
+M0000000107_0074 รับ เด็ก เสื้อ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0075, best cost 73.9772 + 2435.57 = 2509.54 over 320 frames.
+M0000000107_0075 อย่า สมัคร งาน ต่อไป อยู่ เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0076, best cost 71.0425 + 1970.69 = 2041.73 over 248 frames.
+M0000000107_0076 ยัง ไม่ เปลี่ยน หาร รับ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0077, best cost 92.3419 + 2141.27 = 2233.61 over 279 frames.
+M0000000107_0077 ไม่ มี ตั้ง นาน จันทร์ แห่ง ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0078, best cost 76.6506 + 2195.61 = 2272.26 over 292 frames.
+M0000000107_0078 อย่า ซื้อ ร้าน ต่อ ขาย เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0079, best cost 49.8211 + 1427.94 = 1477.76 over 193 frames.
+M0000000107_0079 ขาย เป็น ช้า ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0080, best cost 91.6044 + 2308.6 = 2400.21 over 306 frames.
+M0000000107_0080 อย่า เปิด สาขา บ้าง ต้อง ทำ ไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0081, best cost 92.7441 + 2613.06 = 2705.8 over 347 frames.
+M0000000107_0081 ตก สวย จัง อยาก ได้ ขาย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0082, best cost 108.732 + 2411.41 = 2520.14 over 329 frames.
+M0000000107_0082 หน้า สเต็ก เปิด ร้าน ต้อง สี่ แย็ค หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0083, best cost 44.6681 + 1707.4 = 1752.07 over 208 frames.
+M0000000107_0083 ก๋วยเตี๋ยว ขาย ดี มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0084, best cost 60.1718 + 1599.41 = 1659.58 over 212 frames.
+M0000000107_0084 ซื้อ ไป ที่ เป็น ง่าย บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0085, best cost 62.6372 + 1663.78 = 1726.42 over 238 frames.
+M0000000107_0085 ขาย อาหาร รายได้ ที่ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0086, best cost 61.9328 + 1840.26 = 1902.19 over 229 frames.
+M0000000107_0086 วันนี้ ขาย ไต เยอะ ป่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0087, best cost 63.0197 + 1571.61 = 1634.63 over 223 frames.
+M0000000107_0087 เปลี่ยน หน้า ยก ไป ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0088, best cost 61.9793 + 1623.54 = 1685.52 over 206 frames.
+M0000000107_0088 ใช้ มี ย้อน จาก ที่ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0089, best cost 60.9796 + 1387.54 = 1448.52 over 179 frames.
+M0000000107_0089 ต้อง ใส่ น้ำตาล สี่ ช็อต 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0090, best cost 79.3787 + 1770.05 = 1849.43 over 241 frames.
+M0000000107_0090 ทำ หมู กรอบ การ ใน เกลือ ขับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0091, best cost 87.6594 + 2014.9 = 2102.56 over 258 frames.
+M0000000107_0091 ไซ ผม ช่วง รอบ หรือ ปะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0092, best cost 48.2091 + 1274.15 = 1322.36 over 165 frames.
+M0000000107_0092 ไซ โมง หรือ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0093, best cost 57.6812 + 1492.76 = 1550.44 over 209 frames.
+M0000000107_0093 เอา เป็น ซ้าย การ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0094, best cost 61.9807 + 1482.99 = 1544.97 over 200 frames.
+M0000000107_0094 เอา หวาย ทอด จาน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0095, best cost 74.8942 + 1983.51 = 2058.41 over 275 frames.
+M0000000107_0095 ทำ หมู ลอย ชัยวัฒน์ ใน ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0096, best cost 83.3661 + 1969.86 = 2053.23 over 264 frames.
+M0000000107_0096 รูป ที่ นก กิน ควีน ไหม นึง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0097, best cost 58.4212 + 1656.62 = 1715.04 over 214 frames.
+M0000000107_0097 มา ส่ง ที่ ของ ให้ หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0098, best cost 84.3328 + 2294.51 = 2378.84 over 316 frames.
+M0000000107_0098 มา ส่ง ที่ บาน ได้ไหม ค่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0099, best cost 67.5817 + 1532.52 = 1600.1 over 184 frames.
+M0000000107_0099 ดี โรง ไป เอา ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0100, best cost 77.726 + 1738.55 = 1816.27 over 219 frames.
+M0000000107_0100 เดียว เปิด ไป เท่า ที่ สาม นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000107_0101, best cost 107.949 + 3344.08 = 3452.03 over 424 frames.
+M0000000107_0101 อยู่ ใช่ ตะขาบ แล้ว อะไร ก็ได้ ก๊าซ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0000, best cost 15.4473 + 1118.06 = 1133.5 over 203 frames.
+M0000000124_0000 โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0001, best cost 50.6342 + 1770.42 = 1821.06 over 282 frames.
+M0000000124_0001 โกวาจี เอา ราดหน้า หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0002, best cost 79.1545 + 1992.76 = 2071.92 over 321 frames.
+M0000000124_0002 เอา กระเป๋า ไก่ ใช้ ดาว หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0003, best cost 70.8663 + 1830.96 = 1901.82 over 284 frames.
+M0000000124_0003 สุ่ม ต่ำ ซิก ไม่ คืน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0004, best cost 52.0381 + 1817.33 = 1869.36 over 267 frames.
+M0000000124_0004 ข้าวผัด หมู ไข่ดาว จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0005, best cost 75.2945 + 1850.76 = 1926.06 over 269 frames.
+M0000000124_0005 เอา คั่ว ไก่ ใส่ หมู โคลน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0006, best cost 31.0375 + 1389.28 = 1420.31 over 204 frames.
+M0000000124_0006 ขอ ขวด หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0007, best cost 56.4919 + 1251.97 = 1308.47 over 173 frames.
+M0000000124_0007 นั่ง แพง เผา แก้ว หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0008, best cost 53.7558 + 1665.44 = 1719.19 over 251 frames.
+M0000000124_0008 น้ำเปล่า หนึ่ง น้ำแข็ง สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0009, best cost 45.2746 + 1381.67 = 1426.94 over 199 frames.
+M0000000124_0009 ขอ น้ำแข็ง ทาง นึง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0010, best cost 31.411 + 1332.57 = 1363.98 over 227 frames.
+M0000000124_0010 ขอ รอบ ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0011, best cost 50.935 + 1290.57 = 1341.51 over 199 frames.
+M0000000124_0011 ม้า ห้า คน ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0012, best cost 51.2363 + 1886.81 = 1938.05 over 287 frames.
+M0000000124_0012 สาม โต เที่ยง คืน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0013, best cost 95.2209 + 2467.19 = 2562.41 over 371 frames.
+M0000000124_0013 จอง สิบ ที่ ห้อง แอร์ สองทุ่ม คืน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0014, best cost 43.1358 + 1887.11 = 1930.24 over 302 frames.
+M0000000124_0014 ขอ ตัวแปร ที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0015, best cost 53.9551 + 1635.77 = 1689.73 over 264 frames.
+M0000000124_0015 ขอ นั่ง ต้อง นาน นัก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0016, best cost 63.8246 + 1888.65 = 1952.47 over 278 frames.
+M0000000124_0016 ขอ หน้า ติด กระทบ นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0017, best cost 44.0574 + 1767.81 = 1811.87 over 302 frames.
+M0000000124_0017 ขอ นั่ง ส่าย แอร์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0018, best cost 58.867 + 1697.38 = 1756.25 over 275 frames.
+M0000000124_0018 ขอ กับ ที่ เสื่อม หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0019, best cost 59.3269 + 1357.32 = 1416.64 over 208 frames.
+M0000000124_0019 ขอ ย้าย ประตู นานา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0020, best cost 48.1434 + 1487.74 = 1535.88 over 228 frames.
+M0000000124_0020 ลุก ถ้า ไป ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0021, best cost 41.4281 + 1350.54 = 1391.97 over 219 frames.
+M0000000124_0021 น่า กิน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0022, best cost 51.2684 + 1348.99 = 1400.26 over 207 frames.
+M0000000124_0022 ชิ้น นาย แม้ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0023, best cost 70.8318 + 1932.61 = 2003.45 over 284 frames.
+M0000000124_0023 อาหาร อร่อย น้ำข้น ขาย มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0024, best cost 34.695 + 1826.08 = 1860.77 over 287 frames.
+M0000000124_0024 ขอ เครื่องปรุง หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0025, best cost 35.2499 + 1072.2 = 1107.45 over 169 frames.
+M0000000124_0025 ผิด หมด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0026, best cost 51.6298 + 1680.28 = 1731.91 over 274 frames.
+M0000000124_0026 มี เงิน ที่สุด จี ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0027, best cost 81.6413 + 1551.12 = 1632.76 over 224 frames.
+M0000000124_0027 เอา สอน มัก จะ ที่ หายใจ ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0028, best cost 53.8465 + 1649.28 = 1703.12 over 251 frames.
+M0000000124_0028 ขอ น้ำจิ้ม เพิ่ม ไหน ขาด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0029, best cost 37.0077 + 1425.79 = 1462.8 over 221 frames.
+M0000000124_0029 จะ เสร็จ หรือ ยัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0030, best cost 40.1601 + 1474.74 = 1514.9 over 236 frames.
+M0000000124_0030 พรุ่ง รายได้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0031, best cost 51.9841 + 1390.91 = 1442.9 over 212 frames.
+M0000000124_0031 อาหาร จะ มา กี่ โมง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0032, best cost 46.4313 + 1698.68 = 1745.11 over 260 frames.
+M0000000124_0032 ตอง รอ อีก นาน ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0033, best cost 48.5773 + 1199.24 = 1247.82 over 196 frames.
+M0000000124_0033 เมื่อไหร่ จะ เศษ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0034, best cost 43.8268 + 1277.19 = 1321.01 over 230 frames.
+M0000000124_0034 ร้อน นาน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0035, best cost 41.363 + 1366.56 = 1407.93 over 230 frames.
+M0000000124_0035 ไม่ กี่ แล้ว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0036, best cost 36.398 + 1284.83 = 1321.23 over 212 frames.
+M0000000124_0036 ขอ เปลี่ยน เมนู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0037, best cost 38.0206 + 1483.47 = 1521.49 over 239 frames.
+M0000000124_0037 ไม่ เอา ราคา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0038, best cost 35.815 + 1450.6 = 1486.42 over 210 frames.
+M0000000124_0038 ปลุก ข้าง หลัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0039, best cost 66.2424 + 1883.49 = 1949.73 over 287 frames.
+M0000000124_0039 ย้าย ไป โต สาม หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0040, best cost 63.1426 + 1807.34 = 1870.48 over 279 frames.
+M0000000124_0040 ย้าย ไป ตู้ สอง หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0041, best cost 75.9654 + 2115.18 = 2191.15 over 347 frames.
+M0000000124_0041 เอา ต่อ ตัวนำ มา ต่อ ได้ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0042, best cost 56.4562 + 1888.8 = 1945.25 over 279 frames.
+M0000000124_0042 อยาก อย่า ไป ห้อง ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0043, best cost 45.309 + 1684.53 = 1729.83 over 275 frames.
+M0000000124_0043 ชั้น บน ว่าง ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0044, best cost 36.207 + 1463.95 = 1500.16 over 239 frames.
+M0000000124_0044 เจ็ด ตังค์ ด้วย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0045, best cost 34.8617 + 1816.1 = 1850.96 over 287 frames.
+M0000000124_0045 รับ บัตร เครดิต ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0046, best cost 35.8446 + 1198.25 = 1234.1 over 200 frames.
+M0000000124_0046 เอา ที่ ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0047, best cost 50.0155 + 1887.91 = 1937.93 over 305 frames.
+M0000000124_0047 เซ็ต แกน ใส่ กระเป๋า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0048, best cost 38.4452 + 1632.82 = 1671.27 over 272 frames.
+M0000000124_0048 มี โปรโมชั่น ไทย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0049, best cost 42.9286 + 1435.71 = 1478.64 over 239 frames.
+M0000000124_0049 ไม่ อร่อย เลย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0050, best cost 48.4052 + 1789.2 = 1837.6 over 287 frames.
+M0000000124_0050 รสชาติ เสื้อ มาก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0051, best cost 51.3576 + 1357.52 = 1408.88 over 215 frames.
+M0000000124_0051 ถ้า ที่ นึง ข่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0052, best cost 57.1239 + 1651.65 = 1708.78 over 269 frames.
+M0000000124_0052 เพชร คืน ไป ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0053, best cost 66.5615 + 1796.97 = 1863.53 over 275 frames.
+M0000000124_0053 วันนี้ อร่อย มา ใน ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0054, best cost 42.9391 + 1555.77 = 1598.71 over 242 frames.
+M0000000124_0054 ปิด ไว้ ก่อน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0055, best cost 55.5251 + 1745.63 = 1801.16 over 284 frames.
+M0000000124_0055 พัน ห้า ถอน ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0056, best cost 98.772 + 2406.37 = 2505.14 over 362 frames.
+M0000000124_0056 กิน ครึ่ง จาน ราคา ครึ่ง เดียว ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0057, best cost 40.1684 + 1729.02 = 1769.19 over 287 frames.
+M0000000124_0057 ไม่ ต้อง ถอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0058, best cost 46.9676 + 1629.8 = 1676.77 over 284 frames.
+M0000000124_0058 ล้าง จาน ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0059, best cost 48.5897 + 1941.02 = 1989.61 over 299 frames.
+M0000000124_0059 กระเพา หมูสับ เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0060, best cost 50.2426 + 1988.45 = 2038.69 over 291 frames.
+M0000000124_0060 ต้มยำ กุ้ง เผ็ด มาก ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0061, best cost 66.6655 + 1740.84 = 1807.51 over 281 frames.
+M0000000124_0061 พล จ่าย ด้าน ใน ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0062, best cost 52.0266 + 1567.09 = 1619.11 over 252 frames.
+M0000000124_0062 มี พร้อม ที ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0063, best cost 40.7505 + 1775.91 = 1816.66 over 296 frames.
+M0000000124_0063 เมนู นี้ อร่อย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0064, best cost 67.1416 + 1931.18 = 1998.32 over 267 frames.
+M0000000124_0064 ถอน จัง ซี แสตท 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0065, best cost 60.0654 + 1964.09 = 2024.16 over 294 frames.
+M0000000124_0065 ขอ ที่ ชุบ เพิ่ม หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0066, best cost 56.5261 + 1673.68 = 1730.2 over 260 frames.
+M0000000124_0066 แต่ เจียว ทั้งหมด ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0067, best cost 47.417 + 1838.37 = 1885.79 over 285 frames.
+M0000000124_0067 ขอ มี ทัน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0068, best cost 58.9117 + 1964.65 = 2023.56 over 318 frames.
+M0000000124_0068 ขอ จันทร์ แบน สอง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0069, best cost 62.6756 + 1916.48 = 1979.15 over 302 frames.
+M0000000124_0069 มี ที่ ล้าง หมื่น ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0070, best cost 38.619 + 1662.37 = 1700.98 over 278 frames.
+M0000000124_0070 ขอ เมนู หน่อย สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0071, best cost 55.4602 + 1696.19 = 1751.65 over 278 frames.
+M0000000124_0071 ร้าน มี มี ขอ อีก ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0072, best cost 67.615 + 1568.37 = 1635.99 over 236 frames.
+M0000000124_0072 คน จี มา กิน บ่อย ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0073, best cost 94.8456 + 2641.55 = 2736.39 over 398 frames.
+M0000000124_0073 ห้า อาย รับ วาง ทำ อาหาร นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0074, best cost 58.599 + 1734.68 = 1793.28 over 273 frames.
+M0000000124_0074 รับ เด็ก เสื้อ ใบ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0075, best cost 66.739 + 2225.05 = 2291.79 over 330 frames.
+M0000000124_0075 อย่า สมัคร งาน ต้อง อายุ เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0076, best cost 75.0902 + 2219.24 = 2294.33 over 353 frames.
+M0000000124_0076 ยัง ไม่ กิน จะ หาร รับ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0077, best cost 88.1854 + 2254.15 = 2342.33 over 344 frames.
+M0000000124_0077 ไม่ มี ตังค์ หลัง สาม แทน ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0078, best cost 77.6869 + 2291.51 = 2369.19 over 350 frames.
+M0000000124_0078 อย่า ซื้อ ร้าน ต่อ ขาย เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0079, best cost 38.545 + 1541.73 = 1580.28 over 252 frames.
+M0000000124_0079 ขาย เรียน ใช่ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0080, best cost 91.2571 + 2426.48 = 2517.74 over 374 frames.
+M0000000124_0080 อย่า เปิด สาขา บ้าง ต้อง ทำ ใน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0081, best cost 80.6812 + 2673.04 = 2753.72 over 404 frames.
+M0000000124_0081 ตอง สวย จาน อยาก ได้ เค้ก ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0082, best cost 110.08 + 2418.31 = 2528.39 over 368 frames.
+M0000000124_0082 หน้า จะ ไป เปิด ร้าน ตรง สี่ แยก นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0083, best cost 50.2477 + 1745.35 = 1795.6 over 275 frames.
+M0000000124_0083 ก๋วยเตี๋ยว ขาย ดี ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0084, best cost 63.2014 + 2044.67 = 2107.87 over 312 frames.
+M0000000124_0084 สี่ เจ็ด กี่ เป็น ง่าย บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0085, best cost 66.7101 + 2115.02 = 2181.73 over 344 frames.
+M0000000124_0085 ขาย อาหาร รายได้ กี่ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0086, best cost 55.9429 + 1751.98 = 1807.92 over 269 frames.
+M0000000124_0086 วันนี้ ขาย ได้ อยู่ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0087, best cost 57.405 + 1685.5 = 1742.9 over 284 frames.
+M0000000124_0087 เปลี่ยน หน้า ยก ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0088, best cost 62.7566 + 2102.29 = 2165.04 over 332 frames.
+M0000000124_0088 ใช้ หมู ย่อ จาก ที่ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0089, best cost 67.2847 + 2055.53 = 2122.81 over 329 frames.
+M0000000124_0089 ตอง ใส่ น้ำตาล จี สอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0090, best cost 76.8933 + 2098.8 = 2175.7 over 318 frames.
+M0000000124_0090 ทำ หมู กรอบ มี ใน หรือ ขับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0091, best cost 79.2262 + 1828.93 = 1908.16 over 291 frames.
+M0000000124_0091 ไซ พุ่ง สู่ รถ หรือ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0092, best cost 44.1306 + 1587.17 = 1631.3 over 257 frames.
+M0000000124_0092 ใส่ โมง หรือ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0093, best cost 58.3977 + 1620.7 = 1679.1 over 251 frames.
+M0000000124_0093 เอา เส้น ซ้าย จาน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0094, best cost 59.9318 + 1835.25 = 1895.18 over 279 frames.
+M0000000124_0094 เอา กล้วย ทอด จาน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0095, best cost 83.0747 + 1959.41 = 2042.48 over 327 frames.
+M0000000124_0095 ทำ ตัว ลอย ไข่ หวาน ได้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0096, best cost 83.3846 + 1884.8 = 1968.18 over 279 frames.
+M0000000124_0096 ดู ชิ้น นก เป็น กิน ไหม หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0097, best cost 60.0316 + 2101.12 = 2161.15 over 330 frames.
+M0000000124_0097 มา ส่ง ที่ ของ ให้ หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0098, best cost 92.2129 + 2285.77 = 2377.98 over 338 frames.
+M0000000124_0098 มา ส่ง ให้ ที่ บ้าน ได้ มี ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0099, best cost 68.0934 + 1771.88 = 1839.97 over 260 frames.
+M0000000124_0099 เดียว โรง ไป เอา ครับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0100, best cost 75.1276 + 2123.98 = 2199.1 over 327 frames.
+M0000000124_0100 เดียว เดือน ทันที ร้าน นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000124_0101, best cost 99.2094 + 2698.27 = 2797.48 over 398 frames.
+M0000000124_0101 คิว ไส้ จะ ขาด แล้ว อะไร ก็ได้ จาน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0000, best cost 19.379 + 2255.53 = 2274.91 over 338 frames.
+M0000000131_0000 โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0001, best cost 57.3787 + 3644.87 = 3702.25 over 491 frames.
+M0000000131_0001 โกวาจี เอา ราดหน้า หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0002, best cost 87.3719 + 3637.46 = 3724.84 over 464 frames.
+M0000000131_0002 ขอ ปลุก เรา ไก่ ขาย ดาว หนึ่ง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0003, best cost 65.2416 + 2544.61 = 2609.86 over 328 frames.
+M0000000131_0003 ข้าวผัด หมู ไข่ดาว จาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0004, best cost 58.1508 + 2851.34 = 2909.5 over 384 frames.
+M0000000131_0004 ข้าวผัด หมู ไข่ดาว จาก อาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0005, best cost 82.119 + 3088.91 = 3171.03 over 396 frames.
+M0000000131_0005 เอา คั่ว ไก่ สาย โมง จาน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0006, best cost 36.8506 + 2325.98 = 2362.83 over 332 frames.
+M0000000131_0006 คู่ ขวด หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0007, best cost 70.1666 + 2051.3 = 2121.47 over 284 frames.
+M0000000131_0007 หนัง แทน กล่าว กัน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0008, best cost 70.5573 + 2191.46 = 2262.02 over 284 frames.
+M0000000131_0008 หนัง ป่าว หนึ่ง น้ำแข็ง สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0009, best cost 51.0046 + 1975.74 = 2026.75 over 270 frames.
+M0000000131_0009 ขอ แพง ทาง หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0010, best cost 30.2714 + 1982.81 = 2013.08 over 287 frames.
+M0000000131_0010 ขอ รอบ หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0011, best cost 54.4441 + 1658.62 = 1713.07 over 210 frames.
+M0000000131_0011 มา ห้า ของ ค่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0012, best cost 60.1756 + 1612.67 = 1672.85 over 200 frames.
+M0000000131_0012 สาม โต เสียง ครึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0013, best cost 90.3407 + 2111.68 = 2202.02 over 250 frames.
+M0000000131_0013 จอง สิบ ที่ ร้อง แอร์ สอง ครึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0014, best cost 50.4021 + 1873.95 = 1924.35 over 238 frames.
+M0000000131_0014 ขอ ปลุก แปด ที่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0015, best cost 44.3211 + 1457.28 = 1501.61 over 195 frames.
+M0000000131_0015 ขอ นั่ง ก่อน หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0016, best cost 66.4059 + 1664.38 = 1730.78 over 195 frames.
+M0000000131_0016 ขอ นั่ง ติด ไป จบ หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0017, best cost 61.0668 + 1445.47 = 1506.54 over 190 frames.
+M0000000131_0017 ขอ หนัง ไป แอร์ หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0018, best cost 40.4624 + 1563.53 = 1603.99 over 188 frames.
+M0000000131_0018 ขอ ที่สุด หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0019, best cost 67.2176 + 1514.25 = 1581.47 over 181 frames.
+M0000000131_0019 ขอ ละ เด็ด โรนัน หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0020, best cost 53.2877 + 1412.77 = 1466.06 over 166 frames.
+M0000000131_0020 ลูป มา ไป ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0021, best cost 45.9726 + 1242.9 = 1288.87 over 174 frames.
+M0000000131_0021 หน้า กี่ จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0022, best cost 56.1186 + 1541.36 = 1597.47 over 193 frames.
+M0000000131_0022 ชิ้น ได้ ไหม อะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0023, best cost 82.0068 + 2025.11 = 2107.12 over 257 frames.
+M0000000131_0023 อาหาร อร่อย เหมือน คน ขาย ใหม่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0024, best cost 38.0554 + 1541.07 = 1579.13 over 190 frames.
+M0000000131_0024 ขอ เครื่องปรุง หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0025, best cost 34.1043 + 1126.4 = 1160.51 over 132 frames.
+M0000000131_0025 คริส หมด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0026, best cost 50.8176 + 2017.41 = 2068.22 over 223 frames.
+M0000000131_0026 มี ที่ สุด กี่ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0027, best cost 72.4166 + 2568.85 = 2641.26 over 306 frames.
+M0000000131_0027 ขอ สอน ขอ เอส เอส เก้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0028, best cost 62.9832 + 1587.06 = 1650.04 over 186 frames.
+M0000000131_0028 ขอ ดิน เริ่ม ใหม่ เขา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0029, best cost 37.4338 + 1288.52 = 1325.95 over 152 frames.
+M0000000131_0029 สิ้น เลือด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0030, best cost 35.5081 + 1703.2 = 1738.71 over 224 frames.
+M0000000131_0030 พรุ่ง อะไร ได้ บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0031, best cost 23.0824 + 1442.36 = 1465.44 over 165 frames.
+M0000000131_0031 กี่ โมง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0032, best cost 43.5695 + 1467.71 = 1511.28 over 195 frames.
+M0000000131_0032 มั่ว ร้าน เลย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0033, best cost 20.8161 + 1292.82 = 1313.64 over 145 frames.
+M0000000131_0033 เสร็็จ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0034, best cost 39.7371 + 1637.87 = 1677.6 over 227 frames.
+M0000000131_0034 ร้อน ร้อน จัง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0035, best cost 33.735 + 1232.48 = 1266.21 over 140 frames.
+M0000000131_0035 มี ที่ แล้ว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0036, best cost 40.9405 + 1471.84 = 1512.78 over 178 frames.
+M0000000131_0036 ขอ เปลี่ยน เมนู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0037, best cost 38.9812 + 1185.88 = 1224.86 over 144 frames.
+M0000000131_0037 เหลือ ขอบ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0038, best cost 49.9953 + 2092.09 = 2142.09 over 279 frames.
+M0000000131_0038 ลุก พายุ เหรอ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0039, best cost 53.8616 + 1641.18 = 1695.04 over 197 frames.
+M0000000131_0039 อย่า ประตู สาม หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0040, best cost 62.2968 + 1595.38 = 1657.68 over 197 frames.
+M0000000131_0040 ย้าย ไป ดูด สอง หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0041, best cost 65.4939 + 1936.63 = 2002.12 over 217 frames.
+M0000000131_0041 อัพ เว ต่อ เอ็ด ไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0042, best cost 73.99 + 1600.95 = 1674.94 over 194 frames.
+M0000000131_0042 ย้าย อย่า หรือ ห้อง แอร์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0043, best cost 46.2054 + 1536.53 = 1582.74 over 203 frames.
+M0000000131_0043 ชั้น บน ว่าง ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0044, best cost 36.7805 + 1389.16 = 1425.94 over 151 frames.
+M0000000131_0044 เจ็ด ไป ด้วย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0045, best cost 35.242 + 1516.81 = 1552.05 over 185 frames.
+M0000000131_0045 รับ บัตร เครดิต ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0046, best cost 23.5101 + 1200.99 = 1224.5 over 145 frames.
+M0000000131_0046 เปิด สิบ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0047, best cost 50.3786 + 1526.23 = 1576.61 over 180 frames.
+M0000000131_0047 สิบเอ็ด ใจ ปะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0048, best cost 40.1649 + 1821.59 = 1861.75 over 220 frames.
+M0000000131_0048 มี โปรโมชั่น ใกล้ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0049, best cost 44.5722 + 1474.53 = 1519.1 over 198 frames.
+M0000000131_0049 แม้ว่า เอ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0050, best cost 57.4698 + 1693.59 = 1751.06 over 210 frames.
+M0000000131_0050 พุธ ช้า เตือน บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0051, best cost 49.55 + 1442.8 = 1492.35 over 183 frames.
+M0000000131_0051 ประเทศ หนึ่ง ข้าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0052, best cost 46.2423 + 1358.77 = 1405.01 over 161 frames.
+M0000000131_0052 สิบเอ็ด ไป เช้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0053, best cost 41.9351 + 1532.43 = 1574.37 over 177 frames.
+M0000000131_0053 วันนี้ เหลือ อะไร สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0054, best cost 42.6024 + 1572.84 = 1615.44 over 205 frames.
+M0000000131_0054 ปิด ประตู วอล 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0055, best cost 38.2238 + 1483.02 = 1521.24 over 185 frames.
+M0000000131_0055 พาราโบลา เอส 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0056, best cost 84.5675 + 2312.33 = 2396.9 over 278 frames.
+M0000000131_0056 อีก ครึ่ง จะ ราคา คืน เด็ด ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0057, best cost 35.0113 + 992.274 = 1027.29 over 120 frames.
+M0000000131_0057 เมื่อ หลอด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0058, best cost 37.9891 + 1552.06 = 1590.05 over 212 frames.
+M0000000131_0058 วัน จันทร์ เอส ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0059, best cost 43.5807 + 1931.04 = 1974.62 over 251 frames.
+M0000000131_0059 ปลุกเร้า ซับซ้อน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0060, best cost 43.7416 + 1754.33 = 1798.07 over 197 frames.
+M0000000131_0060 ต้น มี อะไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0061, best cost 40.4058 + 1252.52 = 1292.92 over 148 frames.
+M0000000131_0061 บน จ่าย สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0062, best cost 44.8739 + 1444.67 = 1489.54 over 177 frames.
+M0000000131_0062 มี ทอง ดี มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0063, best cost 51.461 + 1459.34 = 1510.8 over 183 frames.
+M0000000131_0063 มี ดู นี้ อะไร มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0064, best cost 56.5445 + 1459.69 = 1516.24 over 181 frames.
+M0000000131_0064 ชั้น การ สี่ ไซส์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0065, best cost 59.8353 + 1643.05 = 1702.89 over 193 frames.
+M0000000131_0065 ขอ อีก ชุบ เริ่ม หน่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0066, best cost 38.6772 + 1515.11 = 1553.78 over 210 frames.
+M0000000131_0066 เรียก รถ กับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0067, best cost 45.9023 + 829.671 = 875.573 over 106 frames.
+M0000000131_0067 ขอ มี อัน เรียน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0068, best cost 57.1554 + 1415.01 = 1472.17 over 177 frames.
+M0000000131_0068 ขอ จาน ได้ สอง กัน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0069, best cost 61.6986 + 1476.27 = 1537.97 over 188 frames.
+M0000000131_0069 อีก กี่ หลัง มืด ใหม่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0070, best cost 39.0345 + 1138.75 = 1177.79 over 140 frames.
+M0000000131_0070 ขอ วิลลิส สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0071, best cost 42.81 + 1623.62 = 1666.43 over 181 frames.
+M0000000131_0071 หลัง นี้ มี ที่ ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0072, best cost 58.1492 + 1614.92 = 1673.07 over 185 frames.
+M0000000131_0072 พุธ กิน กี่ บาท มั้ย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0073, best cost 69.9725 + 1700.72 = 1770.69 over 198 frames.
+M0000000131_0073 ขั้น อาราบิก้า มา อ่าน หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0074, best cost 48.2566 + 1392.29 = 1440.55 over 162 frames.
+M0000000131_0074 รับ ไป เสร็จ ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0075, best cost 65.6906 + 2062.53 = 2128.23 over 235 frames.
+M0000000131_0075 อยาก สระ อัพ ต้อง ละลาย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0076, best cost 64.2242 + 1585.72 = 1649.95 over 177 frames.
+M0000000131_0076 อย่า เรียน อาหาร รับ ใหม่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0077, best cost 65.1234 + 1825.03 = 1890.15 over 208 frames.
+M0000000131_0077 จาก อาจารย์ แอนด์ เดอะ หลาย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0078, best cost 65.2038 + 1648.95 = 1714.15 over 193 frames.
+M0000000131_0078 อยาก สี่ แล้ว ต่อไป เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0079, best cost 50.3208 + 1355.16 = 1405.49 over 166 frames.
+M0000000131_0079 ขาย เป็น ฉาย ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0080, best cost 41.9348 + 2242.82 = 2284.75 over 278 frames.
+M0000000131_0080 อยาก เปิด จาก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0081, best cost 90.1084 + 2365.76 = 2455.87 over 267 frames.
+M0000000131_0081 ต้อง สวย จาก อยาก ได้ ขาย ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0082, best cost 61.573 + 2048.45 = 2110.02 over 250 frames.
+M0000000131_0082 มะรืน เปิด รังสีเอ็กซ์ นะ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0083, best cost 56.3856 + 1499.19 = 1555.57 over 168 frames.
+M0000000131_0083 เรียก ฉาย ปี ไม้ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0084, best cost 49.1326 + 1704.05 = 1753.19 over 200 frames.
+M0000000131_0084 จะ ได้ กี่ ปี แล้ว บ้าง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0085, best cost 71.3991 + 1719.83 = 1791.23 over 203 frames.
+M0000000131_0085 ขาย หา รายได้ ดี นาย 
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 510 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0086, best cost 64.4812 + 1485.14 = 1549.62 over 170 frames.
+M0000000131_0086 วัน หนึ่ง ขาย เรือ หรือ เปล่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0087, best cost 61.0707 + 1391.51 = 1452.59 over 164 frames.
+M0000000131_0087 เดือน หน้า ยก เป็น นาย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0088, best cost 71.7747 + 1838.95 = 1910.72 over 230 frames.
+M0000000131_0088 ใช้ หมู ย้อน จะ ที่ ไหน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0089, best cost 67.6084 + 1538.98 = 1606.59 over 183 frames.
+M0000000131_0089 ต้อง ใส่ น้ำตาล กี่ สอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0090, best cost 42.3786 + 1597.93 = 1640.31 over 191 frames.
+M0000000131_0090 ขั้น ต่อ ไป หน้า สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0091, best cost 51.647 + 1670.94 = 1722.59 over 176 frames.
+M0000000131_0091 ใช้ ของ ชิ้น ลด ป่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0092, best cost 41.1892 + 1429.49 = 1470.68 over 184 frames.
+M0000000131_0092 ใส่ หมู ป่าว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0093, best cost 48.3866 + 1226.98 = 1275.37 over 152 frames.
+M0000000131_0093 อัพ เลือด สาย จาน หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0094, best cost 50.0959 + 1348.9 = 1399 over 155 frames.
+M0000000131_0094 เอา คอ ทอด จาน หนึ่ง 
+LOG (lattice-add-penalty[5.5.0~1494-e5a5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 510 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0095, best cost 63.867 + 1898.05 = 1961.92 over 231 frames.
+M0000000131_0095 สาม โมง ละ เข้า อะไร ไหม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0096, best cost 52.6225 + 1779.82 = 1832.44 over 198 frames.
+M0000000131_0096 ปลุก สี่ นก สิบ วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0097, best cost 55.6539 + 1543.88 = 1599.54 over 179 frames.
+M0000000131_0097 มัก ซุก ที่ หอ อร่อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0098, best cost 61.973 + 1631.63 = 1693.6 over 190 frames.
+M0000000131_0098 มัก ซุก ไป ที่ บ้านเรือน ร้านค้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0099, best cost 44.4443 + 1348.93 = 1393.37 over 154 frames.
+M0000000131_0099 ลุก แล้ว พับ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0100, best cost 63.2455 + 1413.44 = 1476.68 over 157 frames.
+M0000000131_0100 เลื่อน ไป อัพ ตี ลาน หน้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M0000000131_0101, best cost 78.3099 + 2170.35 = 2248.66 over 242 frames.
+M0000000131_0101 ที่ เศรษฐศาสตร์ แล้ว อะไร ได้ จาม หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:124) Overall cost per frame is 7.1749 = 0.244694 [graph] + 6.93021 [acoustic] over 120161 frames.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:128) Done 510 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon May 17 09:52:06 UTC 2021, elapsed time 1 seconds

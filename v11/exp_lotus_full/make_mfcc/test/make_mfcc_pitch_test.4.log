@@ -1,0 +1,156 @@
+# paste-feats --length-tolerance=2 "ark:compute-mfcc-feats  --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.4 --verbose=2     --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.4.scp ark:- |" "ark,s,cs:compute-kaldi-pitch-feats --verbose=2       --config=conf/pitch.conf scp,p:exp/make_mfcc/test/wav_test.4.scp ark:- |     process-kaldi-pitch-feats  ark:- ark:- |" ark:- | copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.4 ark:- ark,scp:/kaldi/egs/king3/v11/mfcc/raw_mfcc_pitch_test.4.ark,/kaldi/egs/king3/v11/mfcc/raw_mfcc_pitch_test.4.scp 
+# Started at Mon May 17 08:32:30 UTC 2021
+#
+paste-feats --length-tolerance=2 'ark:compute-mfcc-feats  --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.4 --verbose=2     --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.4.scp ark:- |' 'ark,s,cs:compute-kaldi-pitch-feats --verbose=2       --config=conf/pitch.conf scp,p:exp/make_mfcc/test/wav_test.4.scp ark:- |     process-kaldi-pitch-feats  ark:- ark:- |' ark:- 
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.4 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.4.scp ark:- 
+copy-feats --compress=true --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.4 ark:- ark,scp:/kaldi/egs/king3/v11/mfcc/raw_mfcc_pitch_test.4.ark,/kaldi/egs/king3/v11/mfcc/raw_mfcc_pitch_test.4.scp 
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0077
+process-kaldi-pitch-feats ark:- ark:- 
+compute-kaldi-pitch-feats --verbose=2 --config=conf/pitch.conf scp,p:exp/make_mfcc/test/wav_test.4.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0078
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0079
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0080
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0081
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0082
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0083
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0084
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0085
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0086
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0087
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0088
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0089
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0090
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0091
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0092
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0093
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0094
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0095
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 20 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0096
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0097
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0098
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0099
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0100
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000124_0101
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0000
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0001
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0002
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0003
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 30 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0004
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0005
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0006
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0007
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0008
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0009
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0010
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0011
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0012
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0013
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 40 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0014
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0015
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0016
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0017
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0018
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0019
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0020
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0021
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0022
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0023
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0024
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0025
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0026
+VLOG[2] (compute-kaldi-pitch-feats[5.5.0~1494-e5a5]:main():compute-kaldi-pitch-feats.cc:107) Processed 50 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0027
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0028
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0029
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0030
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0031
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0032
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0033
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0034
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0035
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0036
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0037
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0038
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0039
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0040
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0041
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0042
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0043
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 70 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0044
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0045
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0046
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0047
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0048
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0049
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0050
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0051
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0052
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0053
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 80 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0054
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0055
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0056
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0057
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0058
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0059
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0060
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0061
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0062
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0063
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 90 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0064
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0065
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0066
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0067
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0068
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0069
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0070
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0071
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0072
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0073
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0074
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0075
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0076
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0077
+VLOG[2] (compute-kaldi-pitch-feats[5.5.0~1494-e5a5]:main():compute-kaldi-pitch-feats.cc:107) Processed 100 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0078
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0079
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0080
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0081
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0082
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0083
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 110 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0084
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0085
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0086
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0087
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0088
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0089
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0090
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0091
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0092
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0093
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:181) Processed 120 utterances
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0094
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0095
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0096
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0097
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0098
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0099
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0100
+VLOG[2] (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:182) Processed features for key M0000000131_0101
+LOG (compute-mfcc-feats[5.5.0~1494-e5a5]:main():compute-mfcc-feats.cc:185)  Done 127 out of 127 utterances.
+LOG (compute-kaldi-pitch-feats[5.5.0~1494-e5a5]:main():compute-kaldi-pitch-feats.cc:110) Done 127 utterances, 0 with errors.
+LOG (process-kaldi-pitch-feats[5.5.0~1494-e5a5]:main():process-kaldi-pitch-feats.cc:85) Post-processed pitch for 127 utterances.
+LOG (paste-feats[5.5.0~1494-e5a5]:main():paste-feats.cc:158) Done 127 utts, errors on 0
+LOG (copy-feats[5.5.0~1494-e5a5]:main():copy-feats.cc:143) Copied 127 feature matrices.
+# Accounting: time=4 threads=1
+# Ended (code 0) at Mon May 17 08:32:34 UTC 2021, elapsed time 4 seconds

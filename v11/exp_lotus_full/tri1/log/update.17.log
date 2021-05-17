@@ -1,0 +1,19 @@
+# gmm-est --mix-up=7760 --power=0.25 --write-occs=exp/tri1/18.occs exp/tri1/17.mdl "gmm-sum-accs - exp/tri1/17.*.acc |" exp/tri1/18.mdl 
+# Started at Mon May 17 08:42:41 UTC 2021
+#
+gmm-est --mix-up=7760 --power=0.25 --write-occs=exp/tri1/18.occs exp/tri1/17.mdl 'gmm-sum-accs - exp/tri1/17.*.acc |' exp/tri1/18.mdl 
+gmm-sum-accs - exp/tri1/17.1.acc exp/tri1/17.2.acc exp/tri1/17.3.acc exp/tri1/17.4.acc 
+LOG (gmm-sum-accs[5.5.0~1494-e5a5]:main():gmm-sum-accs.cc:63) Summed 4 stats, total count 5.63605e+06, avg like/frame -78.0754
+LOG (gmm-sum-accs[5.5.0~1494-e5a5]:main():gmm-sum-accs.cc:66) Total count of stats is 5.63605e+06
+LOG (gmm-sum-accs[5.5.0~1494-e5a5]:main():gmm-sum-accs.cc:67) Written stats to -
+LOG (gmm-est[5.5.0~1494-e5a5]:MleUpdate():transition-model.cc:528) TransitionModel::Update, objf change is -2.6439e-12 per frame over 5.63605e+06 frames. 
+LOG (gmm-est[5.5.0~1494-e5a5]:MleUpdate():transition-model.cc:531) 207 probabilities floored, 8069 out of 11922 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:102) Transition model update: Overall -2.6439e-12 log-like improvement per frame over 5.63605e+06 frames.
+LOG (gmm-est[5.5.0~1494-e5a5]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:225) 30895 variance elements floored in 7336 Gaussians, out of 7400
+LOG (gmm-est[5.5.0~1494-e5a5]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:229) Removed 0 Gaussians due to counts < --min-gaussian-occupancy=10 and --remove-low-count-gaussians=true
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:113) GMM update: Overall 0.0535115 objective function improvement per frame over 5.63605e+06 frames
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:116) GMM update: Overall avg like per frame = -78.0754 over 5.63605e+06 frames.
+LOG (gmm-est[5.5.0~1494-e5a5]:SplitByCount():am-diag-gmm.cc:116) Split 1504 states with target = 7760, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 7400 to 7760
+LOG (gmm-est[5.5.0~1494-e5a5]:main():gmm-est.cc:146) Written model to exp/tri1/18.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon May 17 08:42:41 UTC 2021, elapsed time 0 seconds

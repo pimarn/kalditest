@@ -1,0 +1,426 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri3b/graph/words.txt exp/tri3b/final.mdl exp/tri3b/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/1/utt2spk scp:data/test/split4/1/cmvn.scp scp:data/test/split4/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split4/1/utt2spk ark:exp/tri3b/decode/pre_trans.1 ark:- ark:- |" "ark:|gzip -c > exp/tri3b/decode/lat.tmp.1.gz" 
+# Started at Mon May 17 09:52:13 UTC 2021
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/tri3b/graph/words.txt exp/tri3b/final.mdl exp/tri3b/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split4/1/utt2spk scp:data/test/split4/1/cmvn.scp scp:data/test/split4/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split4/1/utt2spk ark:exp/tri3b/decode/pre_trans.1 ark:- ark:- |' 'ark:|gzip -c > exp/tri3b/decode/lat.tmp.1.gz' 
+transform-feats --utt2spk=ark:data/test/split4/1/utt2spk ark:exp/tri3b/decode/pre_trans.1 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split4/1/utt2spk scp:data/test/split4/1/cmvn.scp scp:data/test/split4/1/feats.scp ark:- 
+transform-feats exp/tri3b/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+M0000000085_0000 โกวาจี 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0000 is -3.56769 over 127 frames.
+M0000000085_0001 โกวาจี เอา ราดหน้า หนึ่ง จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0001 is -3.70965 over 233 frames.
+M0000000085_0002 เอา กับข้าว ไก่ ไข่ดาว หนึ่ง จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0002 is -3.98619 over 224 frames.
+M0000000085_0003 ส้มตำ เก็บ มัน ครึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0003 is -4.37527 over 212 frames.
+M0000000085_0004 ข้าวผัด หมู ไข่ดาว จาก 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0004 is -4.26752 over 179 frames.
+M0000000085_0005 เอา คั่ว ไก่ ใส่ หมู จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0005 is -4.12709 over 198 frames.
+M0000000085_0006 คุก ขวด หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0006 is -4.19739 over 140 frames.
+M0000000085_0007 น้ำแข็ง สาม แก้ว หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0007 is -3.76192 over 165 frames.
+M0000000085_0008 น้ำเปล่า หนึ่ง น้ำแข็ง สอง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0008 is -3.61241 over 218 frames.
+M0000000085_0009 ขอ น้ำแข็ง ทั้ง นึง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0009 is -3.7877 over 174 frames.
+M0000000085_0010 ขอ รอบ หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0010 is -3.98708 over 135 frames.
+M0000000085_0011 มา ห้า คน สับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0011 is -3.67277 over 153 frames.
+M0000000085_0012 สาม ตอน เที่ยง ครึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0012 is -4.22637 over 176 frames.
+M0000000085_0013 จอง สิบ ที่ ห้อง แอร์ สอง ทุ่ม คืน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0013 is -4.20456 over 261 frames.
+M0000000085_0014 ขอ ตก แปด ที 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0014 is -4.19242 over 162 frames.
+M0000000085_0015 ขอ นั่ง ตรง นั้น หน้า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0015 is -3.84882 over 153 frames.
+M0000000085_0016 ขอ นั่ง ติด กระทบ นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0016 is -4.10433 over 183 frames.
+M0000000085_0017 ขอ นั่ง ไป แอร์ นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0017 is -3.71969 over 189 frames.
+M0000000085_0018 ขอ ต่อ ที่ เสื่อม หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0018 is -4.51023 over 150 frames.
+M0000000085_0019 ขอ ย้าย ไป ต้น เดือน หน้า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0019 is -3.77735 over 197 frames.
+M0000000085_0020 ลุก บ้าง ไป ไหน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0020 is -3.61307 over 162 frames.
+M0000000085_0021 น่า กิน จัง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0021 is -3.52854 over 165 frames.
+M0000000085_0022 ชิ้น ได้ไหม อะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0022 is -4.04092 over 143 frames.
+M0000000085_0023 อาหาร อร่อย เหมือน คน ขาย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0023 is -3.96987 over 216 frames.
+M0000000085_0024 ขอ เครื่องปรุง หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0024 is -4.20601 over 129 frames.
+M0000000085_0025 คริส หมด 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0025 is -3.90984 over 119 frames.
+M0000000085_0026 มี น้ำจิ้ม สุด ที่ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0026 is -3.94418 over 188 frames.
+M0000000085_0027 เอา ซอส ประเทศไทย หน่อย จะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0027 is -4.1739 over 227 frames.
+M0000000085_0028 ขอ น้ำจิ้ม เพิ่ม นัด กับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0028 is -4.06479 over 188 frames.
+M0000000085_0029 จะ เสร็จ หรือ ยัง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0029 is -3.57701 over 153 frames.
+M0000000085_0030 พรุ่ง อะไร ได้ บ้าง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0030 is -3.44749 over 167 frames.
+M0000000085_0031 อาหาร จะ มา กี่ โมง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0031 is -3.84319 over 171 frames.
+M0000000085_0032 ต้อง รอ อีก นาน ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0032 is -3.68366 over 171 frames.
+M0000000085_0033 เมื่อไหร่ เกษตร 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0033 is -3.92774 over 126 frames.
+M0000000085_0034 รอ นาน จัง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0034 is -3.59615 over 150 frames.
+M0000000085_0035 ไม่ กิน แล้ว 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0035 is -3.51001 over 135 frames.
+M0000000085_0036 ขอ เปลี่ยน เมนู 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0036 is -3.81354 over 179 frames.
+M0000000085_0037 ไม่ เอา รับ ฝาก 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0037 is -3.88268 over 147 frames.
+M0000000085_0038 ปลุก ข้าว อยู่ ต่อ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0038 is -4.00914 over 150 frames.
+M0000000085_0039 ได้ ไป โต๊ะ สาม นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0039 is -4.10446 over 177 frames.
+M0000000085_0040 ย้าย โต๊ะ สอง นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0040 is -4.00095 over 156 frames.
+M0000000085_0041 เอา ตอน ตัวนำ มา ต่อ ได้มั้ย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0041 is -3.91131 over 209 frames.
+M0000000085_0042 อยาก อย่า ไป ห้อง แอร์ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0042 is -4.27682 over 162 frames.
+M0000000085_0043 ชั้น บน ว่าง ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0043 is -3.57135 over 146 frames.
+M0000000085_0044 เก็บ ตังค์ ด้วย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0044 is -3.60585 over 146 frames.
+M0000000085_0045 รับ บัตร เครดิต ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0045 is -4.29915 over 183 frames.
+M0000000085_0046 เอา ที่ ไป 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0046 is -4.00704 over 144 frames.
+M0000000085_0047 แสดง จ่าย ได้ บ้าง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0047 is -4.23371 over 159 frames.
+M0000000085_0048 มี โปรโมชั่น ไร ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0048 is -3.84757 over 186 frames.
+M0000000085_0049 ไม่ อร่อย เลย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0049 is -3.81834 over 137 frames.
+M0000000085_0050 รสชาติ แลนด์มาร์ค 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0050 is -3.75893 over 143 frames.
+M0000000085_0051 อาเจียน หนึ่ง ชาว 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0051 is -4.12101 over 144 frames.
+M0000000085_0052 เจ็ด เดือน ใบ ราก 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0052 is -4.52035 over 149 frames.
+M0000000085_0053 วันนี้ อร่อย มา ราคา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0053 is -3.87931 over 173 frames.
+M0000000085_0054 ปิด ประกอบ เป็น 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0054 is -4.10365 over 131 frames.
+M0000000085_0055 ชั้น ห้า หอ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0055 is -3.64756 over 141 frames.
+M0000000085_0056 กิน ครึ่ง การ รักษา ครึ่ง เดียว ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0056 is -4.00418 over 237 frames.
+M0000000085_0057 ไม่ ต้อง ถอน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0057 is -3.75493 over 134 frames.
+M0000000085_0058 ล้าง การ ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0058 is -3.57727 over 156 frames.
+M0000000085_0059 กะเพรา หมูสับ เท่าไหร่ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0059 is -4.15734 over 192 frames.
+M0000000085_0060 ต้มยำ กุ้ง เผ็ด มาก ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0060 is -4.2051 over 186 frames.
+M0000000085_0061 พล จ่าย ได้ หรือ ฟาก 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0061 is -4.00256 over 164 frames.
+M0000000085_0062 มี ของ เค็ม ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0062 is -3.72098 over 144 frames.
+M0000000085_0063 เมนู นี้ อร่อย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0063 is -3.72968 over 155 frames.
+M0000000085_0064 ซ้อน กัน พี เอส 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0064 is -3.8111 over 161 frames.
+M0000000085_0065 ขอ อีก ชั่วคราว หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0065 is -4.43808 over 164 frames.
+M0000000085_0066 กระเทียม หมด ค่า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0066 is -4.47514 over 144 frames.
+M0000000085_0067 ขอ มี ปั่น หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0067 is -3.63208 over 161 frames.
+M0000000085_0068 ขอ จันทร์ แบน สอง จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0068 is -3.94889 over 185 frames.
+M0000000085_0069 มี ที่นั่ง ว่าง ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0069 is -3.44373 over 164 frames.
+M0000000085_0070 ขอ เมนู หน่อย สิ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0070 is -3.53631 over 162 frames.
+M0000000085_0071 ลาน นี้ มี คน วิป ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0071 is -4.30493 over 164 frames.
+M0000000085_0072 คน จีน มา กิน บ่อย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0072 is -3.88891 over 191 frames.
+M0000000085_0073 อะไร ระหว่าง ทำ อาหาร นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0073 is -3.9491 over 224 frames.
+M0000000085_0074 รับ เด็ก เสื้อ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0074 is -3.9814 over 144 frames.
+M0000000085_0075 อยาก สมัคร งาน ต้อง อายุ เท่าไหร่ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0075 is -4.38969 over 201 frames.
+M0000000085_0076 ยัง ไม่ กิน อาหาร หลับ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0076 is -3.85856 over 188 frames.
+M0000000085_0077 ไม่ มี ตั้ง ร้าน การแพทย์ ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0077 is -4.12513 over 231 frames.
+M0000000085_0078 อยาก ซื้อ ร้าน ต่อ ขาย เท่าไหร่ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0078 is -4.09734 over 206 frames.
+M0000000085_0079 ขาย แสง ใช่ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0079 is -3.38015 over 176 frames.
+M0000000085_0080 อยาก เปิด สาขา บ้าง ต้อง ทำ ใน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0080 is -4.1543 over 218 frames.
+M0000000085_0081 ต่อ ไป จัง อยาก ได้ ขาย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0081 is -3.93107 over 290 frames.
+M0000000085_0082 หน้า จะ ไป เปิด ร้าน ต้อง สี่ แยก นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0082 is -4.12399 over 243 frames.
+M0000000085_0083 ก๋วยเตี๋ยว ขาย ดี มั้ย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0083 is -3.83389 over 191 frames.
+M0000000085_0084 ซื้อ จะ กี่ เป็น ไทย บ้าง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0084 is -4.09752 over 164 frames.
+M0000000085_0085 ขาย อาหาร รายได้ ดี มั้ย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0085 is -3.76581 over 203 frames.
+M0000000085_0086 วัน หนึ่ง ขาย ได้ เยอะ เปล่า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0086 is -3.79707 over 203 frames.
+M0000000085_0087 เปลี่ยน ได้ ยก ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0087 is -3.36035 over 176 frames.
+M0000000085_0088 ใช้ หมู ย่อ จาก ที่ไหน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0088 is -4.12641 over 179 frames.
+M0000000085_0089 ต้อง ใส่ น้ำตาล กี่ สอน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0089 is -4.12923 over 167 frames.
+M0000000085_0090 ทำ หมู กรอบ ยัง ใน ร้านค้า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0090 is -3.98639 over 203 frames.
+M0000000085_0091 ใส่ ถุง ชุด รถ รึ ป่าว 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0091 is -4.44934 over 161 frames.
+M0000000085_0092 ใส่ หมู รึ ป่าว 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0092 is -3.75067 over 147 frames.
+M0000000085_0093 เอา เป็น ซ้าย จาน หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0093 is -3.7835 over 152 frames.
+M0000000085_0094 เอา ด้วย ทอด จาน นึง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0094 is -3.83936 over 198 frames.
+M0000000085_0095 ทำ บัว ลอย ใช้ หวาน ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0095 is -3.68614 over 200 frames.
+M0000000085_0096 รูป ที่ นก เป็น กิน ไหม หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0096 is -4.45685 over 194 frames.
+M0000000085_0097 มา ส่ง ที่ ขอ ให้ หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0097 is -4.03589 over 167 frames.
+M0000000085_0098 มา ส่ง ที่ บ้าน ได้ ใน กับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0098 is -3.97355 over 189 frames.
+M0000000085_0099 เดียว ลง ไป เอา อะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0099 is -4.45114 over 138 frames.
+M0000000085_0100 เรือ เดิน ไป เอา ที่ ลาน นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0100 is -3.80128 over 206 frames.
+M0000000085_0101 หิว ไส้ จะ ขาด แล้ว อะไร ก็ได้ จาน นึง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000085_0101 is -4.1777 over 266 frames.
+M0000000105_0000 โกวาจี 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0000 is -2.81809 over 178 frames.
+M0000000105_0001 โกวาจี เอา ราดหน้า หนึ่ง จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0001 is -3.41812 over 366 frames.
+M0000000105_0002 เอา กะเพรา ไก่ ไข่ดาว หนึ่ง จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0002 is -3.8024 over 314 frames.
+M0000000105_0003 ส้มตำ ผลิต เมตร คืน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0003 is -4.4486 over 257 frames.
+M0000000105_0004 ข้าวผัด หมู ไข่ดาว จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0004 is -3.7218 over 316 frames.
+M0000000105_0005 เอา ขวด เกย ใส่ หมู จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0005 is -3.69593 over 309 frames.
+M0000000105_0006 ขอ ขวด หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0006 is -3.98549 over 220 frames.
+M0000000105_0007 น้ำแข็ง ป่าว แก้ว หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0007 is -3.60901 over 271 frames.
+M0000000105_0008 น้ำ เปล่า หนึ่ง น้ำแข็ง สอง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0008 is -3.44854 over 350 frames.
+M0000000105_0009 ขอ น้ำแข็ง ทั้ง หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0009 is -3.60678 over 252 frames.
+M0000000105_0010 ขอ หลอด หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0010 is -3.28029 over 235 frames.
+M0000000105_0011 มา ห้า คน ครับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0011 is -3.58858 over 178 frames.
+M0000000105_0012 สาม ตอน เที่ยง คืน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0012 is -4.32331 over 172 frames.
+M0000000105_0013 จอง สิบ ที่ ห้อง แป สอง ทุ่ม คืน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0013 is -3.79951 over 646 frames.
+M0000000105_0014 ขอ โต๊ะ แปด ที่ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0014 is -3.58004 over 213 frames.
+M0000000105_0015 ขอ นั่ง ตรง นาน นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0015 is -3.36032 over 252 frames.
+M0000000105_0016 ขอ นั่ง ติด ประจุ นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0016 is -4.31509 over 252 frames.
+M0000000105_0017 ขอ นั่ง ตาย แอนด์ นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0017 is -3.5711 over 193 frames.
+M0000000105_0018 ขอ เก่า ที่สุด เริ่ม หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0018 is -4.09061 over 238 frames.
+M0000000105_0019 ขอ ย้าย ไป โต๊ะ นั้น นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0019 is -3.63147 over 236 frames.
+M0000000105_0020 ดู ปา ไป ไหน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0020 is -3.63014 over 190 frames.
+M0000000105_0021 น่า กิน จัง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0021 is -3.31361 over 142 frames.
+M0000000105_0022 พิม ได้ ไหม อะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0022 is -3.51265 over 176 frames.
+M0000000105_0023 อาหาร อร่อย เหมือน คน ขาย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0023 is -3.80224 over 273 frames.
+M0000000105_0024 ขอ เครื่องปรุง หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0024 is -3.90328 over 201 frames.
+M0000000105_0025 พริก หมด 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0025 is -4.07186 over 111 frames.
+M0000000105_0026 มี น้ำจิ้ม สุกี้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0026 is -3.51317 over 292 frames.
+M0000000105_0027 เอา ซอส มา เสื้อ เชดส์ ให้ หน่อย จะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0027 is -3.86004 over 373 frames.
+M0000000105_0028 ขอ น้ำจิ้ม เพิ่ม หน่อย ครับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0028 is -3.65912 over 298 frames.
+M0000000105_0029 จะ เสร็จ หรือ ยัง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0029 is -3.51357 over 216 frames.
+M0000000105_0030 คั่ว อะไร ได้ บ้าง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0030 is -3.61659 over 212 frames.
+M0000000105_0031 อาหาร จะ มา กี่ โมง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0031 is -3.25021 over 255 frames.
+M0000000105_0032 ต้อง ขอ อีก นาน ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0032 is -3.39322 over 267 frames.
+M0000000105_0033 เมื่อ ไร จะ เสร็็จ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0033 is -3.40773 over 215 frames.
+M0000000105_0034 วอล นาน จัง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0034 is -3.14195 over 198 frames.
+M0000000105_0035 ไม่ กิน แล้ว 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0035 is -2.89731 over 249 frames.
+M0000000105_0036 ขอ เปลี่ยน เมนู 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0036 is -3.33844 over 221 frames.
+M0000000105_0037 ไม่ เอา แล้ว ครับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0037 is -3.80814 over 209 frames.
+M0000000105_0038 ดู ข้าว ยู 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0038 is -3.4254 over 307 frames.
+M0000000105_0039 ย้าย ไป ตก สาม นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0039 is -3.46767 over 234 frames.
+M0000000105_0040 ย้าย ไป ตก สอง หน้า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0040 is -3.71617 over 245 frames.
+M0000000105_0041 เอา โต๊ะ ตัว นั้น มา ต่อ ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0041 is -3.63172 over 385 frames.
+M0000000105_0042 อยาก ย้าย ไป ของ แอร์ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0042 is -3.55026 over 279 frames.
+M0000000105_0043 ฉัน บน ว่าง ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0043 is -3.83146 over 264 frames.
+M0000000105_0044 เก็บ ตังค์ ด้วย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0044 is -3.54744 over 190 frames.
+M0000000105_0045 รับ บัตร เครดิต ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0045 is -3.35505 over 280 frames.
+M0000000105_0046 เอา ที่ ไป 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0046 is -3.33027 over 187 frames.
+M0000000105_0047 แสดง จ่าย ได้ ปา 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0047 is -3.63826 over 236 frames.
+M0000000105_0048 มี โปรโมชัน ไร ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0048 is -3.21062 over 325 frames.
+M0000000105_0049 ไม่ เอา ลอย เลย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0049 is -3.40679 over 220 frames.
+M0000000105_0050 รสชาติ แอร์ มาก 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0050 is -3.66265 over 205 frames.
+M0000000105_0051 ปลา เค็ม เหม็น ข่าว 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0051 is -3.28078 over 305 frames.
+M0000000105_0052 เพชร เกิน ไป รับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0052 is -3.57041 over 220 frames.
+M0000000105_0053 วัน นี้ อร่อย มาก เลย รับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0053 is -3.47185 over 376 frames.
+M0000000105_0054 ปิด ไว้ ก่อน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0054 is -3.3938 over 194 frames.
+M0000000105_0055 พัน ห้า ขอ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0055 is -3.7437 over 202 frames.
+M0000000105_0056 กิน คลื่น จาน ราคา กึ่ง เดียว ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0056 is -3.65139 over 450 frames.
+M0000000105_0057 ใหม่ ต้อง พร 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0057 is -3.38986 over 187 frames.
+M0000000105_0058 บาง การ ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0058 is -3.32568 over 215 frames.
+M0000000105_0059 กะเพรา หมูสับ เท่าไร 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0059 is -3.39473 over 273 frames.
+M0000000105_0060 ต้มยำ กุ้ง เผ็ด มาก ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0060 is -3.63535 over 331 frames.
+M0000000105_0061 พล จ่าย ได้ ไหม ครับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0061 is -3.55078 over 256 frames.
+M0000000105_0062 มี พร้อมเพรียง ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0062 is -3.47533 over 209 frames.
+M0000000105_0063 เมนู นี้ อร่อย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0063 is -3.57911 over 264 frames.
+M0000000105_0064 สอน กลาง ที่ ไซส์ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0064 is -4.09726 over 220 frames.
+M0000000105_0065 ขอ ที่ ทู เพิ่ม หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0065 is -3.69007 over 273 frames.
+M0000000105_0066 จะ เทียบ หมด ครับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0066 is -4.06805 over 194 frames.
+M0000000105_0067 ขอ มี ปั่น หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0067 is -3.80909 over 212 frames.
+M0000000105_0068 ขอ การ แดง สอง จาน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0068 is -3.76921 over 279 frames.
+M0000000105_0069 มี ที่ ร้าน มือ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0069 is -3.4344 over 272 frames.
+M0000000105_0070 ขอ เมนู หน่อย สิ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0070 is -3.46111 over 219 frames.
+M0000000105_0071 ลาน นี้ มี โค วิป ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0071 is -3.55183 over 320 frames.
+M0000000105_0072 คน จีน มา กิน บ่อย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0072 is -3.41737 over 332 frames.
+M0000000105_0073 ข้าม ไป ระหว่าง ทำ อาหาร นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0073 is -3.6589 over 393 frames.
+M0000000105_0074 รับ เด็ก ส่วนลด ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0074 is -3.44694 over 257 frames.
+M0000000105_0075 อยาก สมัคร งาน ต้อง อายุ เท่าไร 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0075 is -3.5356 over 378 frames.
+M0000000105_0076 ยัง ไม่ เจน จะ หาร รับ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0076 is -3.60021 over 330 frames.
+M0000000105_0077 ไม่ มี ปัง ล้าง การ แฟน ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0077 is -3.4104 over 435 frames.
+M0000000105_0078 อยาก ซื้อ ร้าน ต่อ ขาย เท่าไหร่ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0078 is -3.43413 over 373 frames.
+M0000000105_0079 ขาย เครน คล้าย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0079 is -3.54878 over 266 frames.
+M0000000105_0080 อยาก เปิด สาขา บ้าง ต้อง ทำ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0080 is -3.36259 over 408 frames.
+M0000000105_0081 โต๊ะ สวย จัง อยาก ได้ ขาย ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0081 is -3.4676 over 394 frames.
+M0000000105_0082 หน้า จะ ไป เปิด ร้าน ตรง สี่ แยก นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0082 is -3.47662 over 429 frames.
+M0000000105_0083 ก๋วยเตี๋ยว ขาย ดี มั้ย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0083 is -3.68964 over 257 frames.
+M0000000105_0084 สะกดจิต เป็น ไร บ้าง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0084 is -3.58603 over 271 frames.
+M0000000105_0085 ขาย อาหาร รายได้ ดี ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0085 is -3.44267 over 335 frames.
+M0000000105_0086 วัน นึง ถ่าย ได้ หรือ เปล่า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0086 is -3.40776 over 334 frames.
+M0000000105_0087 เปลี่ยน หน้า ยก ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0087 is -3.49107 over 259 frames.
+M0000000105_0088 ใช้ หมู ย้อน จาก ที่ไหน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0088 is -4.24107 over 295 frames.
+M0000000105_0089 ต้อง ใส่ น้ำตาล กี่ สอน 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0089 is -4.03209 over 249 frames.
+M0000000105_0090 ทำ หมู กรอบ ยัง ใน ร้านค้า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0090 is -3.58717 over 328 frames.
+M0000000105_0091 ใส่ ของ ชุด รถ หรือ เปล่า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0091 is -3.67497 over 263 frames.
+M0000000105_0092 ใส่ หมู หรือ เปล่า 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0092 is -3.58107 over 230 frames.
+M0000000105_0093 เอา เส้น ไฟ จาน หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0093 is -3.32908 over 289 frames.
+LOG (apply-cmvn[5.5.0~1494-e5a5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 204 utterances, errors on 0
+M0000000105_0094 เอา กล้วย ทอด จาน หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0094 is -3.3268 over 615 frames.
+M0000000105_0095 ทำ บัว ลอย ไข่ หวาน ได้ ไหม 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0095 is -3.35626 over 363 frames.
+M0000000105_0096 ปลุก ชิ้น นก เป็น ควีน ไม้ หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0096 is -3.59332 over 337 frames.
+M0000000105_0097 มา ส่ง ที่ ของ ให้ หน่อย 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0097 is -3.78817 over 294 frames.
+M0000000105_0098 มา ส่ง ให้ ที่ บ้าน ได้ ไหม ครับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0098 is -3.79725 over 390 frames.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -28.1793 over 46546 frames.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:161) Applied transform to 204 utterances; 0 had errors.
+M0000000105_0099 เดียว ลง ไป เอา ครับ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0099 is -3.70454 over 273 frames.
+M0000000105_0100 เดียว เดิน ไป เอา ที่ ร้าน นะ 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0100 is -3.62681 over 361 frames.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:158) Overall average logdet is 0.70365 over 46546 frames.
+LOG (transform-feats[5.5.0~1494-e5a5]:main():transform-feats.cc:161) Applied transform to 204 utterances; 0 had errors.
+M0000000105_0101 อยู่ ใส่ จะ ขาด แล้ว อะไร ก็ ได้ จาน หนึ่ง 
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance M0000000105_0101 is -3.61763 over 544 frames.
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:176) Time taken 72.769s: real-time factor assuming 100 frames/sec is 0.156338
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:179) Done 204 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.0~1494-e5a5]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -3.72397 over 46546 frames.
+# Accounting: time=73 threads=1
+# Ended (code 0) at Mon May 17 09:53:26 UTC 2021, elapsed time 73 seconds

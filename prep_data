@@ -1,0 +1,21 @@
+#!/bin/bash
+
+DIR=/data/corpus/moca_data/data
+OUT=/data/corpus/moca_data/lang2
+
+[ ! -d $OUT ] && mkdir -p $OUT
+
+cd $DIR
+flist=`ls`
+for f in $flist; do
+  cd $DIR/$f
+  if [ -d language2 ]; then
+	  cd language2
+	  nname=`date '+%Y%m%d%H%M%S'`
+	  cp sound.m4a $OUT/sound_${nname}.m4a
+	  ls
+  fi
+done
+
+
+
